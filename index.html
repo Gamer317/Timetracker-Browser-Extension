@@ -1,0 +1,1882 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Timetracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='totSheenA' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233ee8ff' stop-opacity='.55'/%3E%3Cstop offset='1' stop-color='%233ee8ff' stop-opacity='0'/%3E%3C/linearGradient%3E%3ClinearGradient id='totSheenB' x1='1' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23ff4fd8' stop-opacity='.5'/%3E%3Cstop offset='1' stop-color='%23ff4fd8' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' width='64' height='64' rx='14' fill='%23ffffff'/%3E%3Ccircle cx='33.8' cy='36.8' r='25.5' fill='%23000000' opacity='0.18'/%3E%3Ccircle cx='32' cy='35' r='25.5' fill='%23121212'/%3E%3Cg fill='none' stroke-width='0.3'%3E%3Ccircle cx='32' cy='35' r='24.10' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='23.55' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='23.00' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='22.45' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='21.90' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='21.35' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='20.80' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='20.25' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='19.70' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='19.15' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='18.60' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='18.05' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='17.50' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='16.95' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='16.40' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='15.85' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='15.30' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='14.75' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='14.20' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='13.65' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='13.10' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='12.55' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='12.00' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='11.45' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='10.90' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='10.35' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='9.80' stroke='%23262626'/%3E%3Ccircle cx='32' cy='35' r='9.25' stroke='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='8.70' stroke='%23262626'/%3E%3C/g%3E%3Cpath d='M8.98 26.62A24.5 24.5 0 0 1 25.66 11.33L29.77 26.69A8.6 8.6 0 0 0 23.92 32.06Z' fill='url(%23totSheenA)'/%3E%3Cpath d='M55.02 43.38A24.5 24.5 0 0 1 38.34 58.67L34.23 43.31A8.6 8.6 0 0 0 40.08 37.94Z' fill='url(%23totSheenB)'/%3E%3Ccircle cx='32' cy='35' r='25.1' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='32' cy='35' r='7.6' fill='%23ffd23a'/%3E%3Ccircle cx='32' cy='35' r='7.6' fill='none' stroke='%23000000' stroke-width='0.5'/%3E%3Ccircle cx='32' cy='35' r='3.3' fill='%23121212'/%3E%3Cg transform='translate(1.6 1.6)' fill='%23000000' stroke='%23000000' stroke-width='1.6' stroke-linejoin='round'%3E%3Crect x='12.2' y='22.00' width='19' height='6.6' rx='2.2'/%3E%3Crect x='18.5' y='22.00' width='6.4' height='20.6' rx='2.2'/%3E%3Crect x='32.8' y='22.00' width='19' height='6.6' rx='2.2'/%3E%3Crect x='39.099999999999994' y='22.00' width='6.4' height='20.6' rx='2.2'/%3E%3C/g%3E%3Cg fill='%23ffd23a' stroke='%23ffd23a' stroke-width='1.6' stroke-linejoin='round'%3E%3Crect x='12.2' y='22.00' width='19' height='6.6' rx='2.2'/%3E%3Crect x='18.5' y='22.00' width='6.4' height='20.6' rx='2.2'/%3E%3Crect x='32.8' y='22.00' width='19' height='6.6' rx='2.2'/%3E%3Crect x='39.099999999999994' y='22.00' width='6.4' height='20.6' rx='2.2'/%3E%3C/g%3E%3Cg fill='%23ff2e3b'%3E%3Crect x='12.2' y='22.00' width='19' height='6.6' rx='2.2'/%3E%3Crect x='18.5' y='22.00' width='6.4' height='20.6' rx='2.2'/%3E%3Crect x='32.8' y='22.00' width='19' height='6.6' rx='2.2'/%3E%3Crect x='39.099999999999994' y='22.00' width='6.4' height='20.6' rx='2.2'/%3E%3C/g%3E%3Cpath d='M55.5 7.3Q55.5 10.5 58.7 10.5Q55.5 10.5 55.5 13.7Q55.5 10.5 52.3 10.5Q55.5 10.5 55.5 7.3Z' fill='%23ffd23a'/%3E%3Cpath d='M9.5 9.3Q9.5 11.5 11.7 11.5Q9.5 11.5 9.5 13.7Q9.5 11.5 7.3 11.5Q9.5 11.5 9.5 9.3Z' fill='%23ffd23a'/%3E%3Cpath d='M51 14.9Q51 16.5 52.6 16.5Q51 16.5 51 18.1Q51 16.5 49.4 16.5Q51 16.5 51 14.9Z' fill='%23ff2e3b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: eine Spalte, ein gemeinsamer Zeitstrahl läuft vertikal von alt (oben) nach neu (unten), Aktionsleiste klebt unten */
+:root{
+  --bg:#eceff6; --surface:#ffffff; --ink:#161d36; --muted:#59617e; --line:#d3d8e7;
+  --accent:#2a4bd6; --accent-ink:#ffffff; --good:#1c8549; --bad:#c0352d; --slot:#f6f7fb;
+  --joker:#8146d6; --joker-soft:#ece3fb; --disc:#1b1f2c; --groove:#2c3244;
+  --f-display:"Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --f-body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f1220; --surface:#191e31; --ink:#e8ebf6; --muted:#9aa2c0; --line:#2b3250;
+    --accent:#7b95ff; --accent-ink:#0c1020; --good:#4cc283; --bad:#ff7a71; --slot:#141829;
+    --joker:#c09bff; --joker-soft:#2a2244; --disc:#080a12; --groove:#1a1f2e; color-scheme:dark }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--f-body);
+  padding-top:env(safe-area-inset-top,0px);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  -webkit-tap-highlight-color:transparent}
+[hidden]{display:none!important}
+main{max-width:560px;margin:0 auto;padding-block:16px 140px;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{font-family:var(--f-display);font-weight:800;line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:2.4rem;letter-spacing:-.02em}
+h2{font-size:1.5rem}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:.875rem}
+.label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+a{color:var(--accent)}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:800;font-size:1.25rem}
+.hero .logo{width:96px;height:96px;display:block}
+.brand .logo{width:30px;height:30px;flex:none;display:block}
+.brand span{white-space:nowrap}
+.field{display:flex;flex-direction:column;gap:4px}
+.bonusgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media (max-width:360px){.bonusgrid{grid-template-columns:1fr}}
+.bonusline{color:var(--ink);font-weight:600}
+.brand i{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle,var(--accent) 0 28%,var(--disc) 29% 100%);display:block}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:14px}
+.steps{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em}
+.copyrow{display:flex;gap:8px;align-items:stretch}
+.copyrow code{flex:1;min-width:0;overflow-wrap:anywhere;background:var(--slot);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+select,input[type=text],input[type=number],textarea{width:100%;font:inherit;color:var(--ink);background:var(--slot);border:1px solid var(--line);border-radius:10px;padding:11px 12px}
+input:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 14px;font-weight:600}
+button:disabled{opacity:.45;cursor:not-allowed}
+.btn-primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);padding:13px 18px;font-size:1.05rem}
+.btn-ghost{background:transparent;border-color:transparent;color:var(--muted);padding:6px 8px;font-weight:500}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.stack{display:flex;flex-direction:column;gap:10px}
+.list{display:flex;flex-direction:column;gap:8px}
+.pl{display:flex;align-items:center;gap:12px;text-align:left;width:100%;padding:10px}
+.pl img,.pl .ph{width:48px;height:48px;border-radius:6px;object-fit:cover;background:var(--slot);flex:none}
+.pl .t{min-width:0;flex:1}
+.pl .t b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.err{color:var(--bad);font-weight:600}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(96px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:10px;max-width:min(520px,calc(100vw - 32px));font-size:.9rem;z-index:20}
+.devices label{display:flex;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:10px;cursor:pointer}
+.devices input{accent-color:var(--accent)}
+
+/* Spielerleiste mit zwei Anzeigen: Punkte und Jokerpunkte */
+.scores{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+.ps{border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:8px 10px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.ps.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.ps .top{display:flex;justify-content:space-between;align-items:baseline;gap:6px}
+.ps .nm{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.ps .pts{font:800 1.25rem/1 var(--f-display);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ps .pts small{font:500 .75rem var(--f-body);color:var(--muted)}
+.meter{display:flex;align-items:center;gap:6px;font-size:.75rem;color:var(--joker);font-weight:700}
+.meter .seg{display:flex;gap:3px;flex:1}
+.meter .seg i{flex:1;height:7px;border-radius:4px;background:var(--joker-soft)}
+.meter .seg i.f{background:var(--joker)}
+.meter.pop .seg i.f:last-of-type{animation:pop .5s ease}
+@keyframes pop{50%{transform:scaleY(1.9)}}
+
+/* Übersicht über den gemeinsamen Zeitstrahl */
+.strip{position:relative;height:34px;border-radius:8px;background:var(--surface);border:1px solid var(--line);overflow:hidden}
+.strip i{position:absolute;top:6px;bottom:14px;width:4px;margin-left:-2px;border-radius:2px}
+.strip i.n{outline:2px solid var(--good);outline-offset:1px}
+.strip span{position:absolute;bottom:1px;font-size:.65rem;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* Mystery-Platte */
+.stage{display:flex;gap:16px;align-items:center}
+.disc{width:112px;height:112px;flex:none;border-radius:50%;position:relative;
+  background:repeating-radial-gradient(circle,var(--disc) 0 2px,var(--groove) 2px 3px);box-shadow:0 6px 18px rgb(0 0 0/.18)}
+.disc::after{content:"?";position:absolute;inset:34%;border-radius:50%;background:var(--accent);color:var(--accent-ink);
+  display:grid;place-items:center;font:800 1.4rem var(--f-display)}
+.disc.img::after{content:""}
+.disc img{position:absolute;inset:30%;width:40%;height:40%;border-radius:50%;object-fit:cover;z-index:1}
+.disc.spin{animation:spin 2.2s linear infinite}
+.disc.spin.fast{animation-duration:.9s}
+.disc.spin.rev{animation-direction:reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.disc.spin,.meter.pop .seg i{animation:none}}
+.stage .info{min-width:0;flex:1;display:flex;flex-direction:column;gap:8px}
+.ctrl{display:flex;gap:8px;flex-wrap:wrap}
+.badges{display:flex;gap:6px;flex-wrap:wrap}
+.badge{font-size:.8rem;font-weight:700;border-radius:999px;padding:3px 10px;background:var(--joker-soft);color:var(--joker)}
+.badge.bad{background:transparent;border:1px solid var(--bad);color:var(--bad)}
+
+/* Zeitstrahl */
+.tl{display:flex;flex-direction:column;gap:6px}
+.card{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 12px 8px 8px}
+.year{font:800 1.35rem/1 var(--f-display);font-variant-numeric:tabular-nums;color:#151926;border-radius:8px;padding:10px 8px;min-width:4.4rem;text-align:center;flex:none}
+.card .t{min-width:0;flex:1}
+.card .t b{display:block;font-weight:600;overflow-wrap:anywhere}
+.card .t span{color:var(--muted);font-size:.875rem;overflow-wrap:anywhere}
+.card .who{font-size:.75rem;color:var(--muted);flex:none}
+.card.new{border-color:var(--good);box-shadow:inset 0 0 0 1px var(--good)}
+.card.ghost{border-style:dashed;border-color:var(--bad)}
+.card.miss{border-style:dashed}
+.card.miss .year{opacity:.7}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;cursor:pointer}
+.check input{margin-top:3px;width:18px;height:18px;accent-color:var(--accent);flex:none}
+.card.ghost .year{outline:2px dashed var(--bad);outline-offset:-2px}
+.slot{width:100%;border:1.5px dashed var(--line);background:transparent;color:var(--muted);border-radius:10px;padding:9px 12px;font-weight:500;font-size:.875rem;text-align:left;display:flex;justify-content:space-between;gap:8px}
+.slot:hover{border-color:var(--accent);color:var(--ink)}
+.slot.sel{border-style:solid;border-color:var(--accent);background:var(--accent);color:var(--accent-ink);font-weight:700}
+.slot.wrong{border-style:solid;border-color:var(--bad);color:var(--bad);font-weight:700}
+.d1950{background:#f2b544}.d1960{background:#f39060}.d1970{background:#ea79a6}.d1980{background:#b08cf2}
+.d1990{background:#67aef2}.d2000{background:#4ec7b4}.d2010{background:#93d673}.d2020{background:#dcd450}.dold{background:#c9b28f}
+
+.result{border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:4px;border:1px solid}
+.result.ok{border-color:var(--good);color:var(--good)}
+.result.no{border-color:var(--bad);color:var(--bad)}
+.result h3{font-size:1.3rem}
+.result p{color:var(--ink)}
+
+/* Joker-Laden */
+.seg-pick{display:flex;gap:6px;flex-wrap:wrap}
+.seg-pick button{padding:7px 12px;border-radius:999px;font-weight:600;font-size:.9rem}
+.seg-pick button.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.jokers{display:grid;grid-template-columns:1fr;gap:8px}
+.joker{display:flex;gap:12px;align-items:center;text-align:left;padding:12px}
+.joker .t{flex:1;min-width:0}
+.joker .t b{display:block}
+.joker .t span{font-size:.85rem;color:var(--muted);font-weight:400}
+.cost{flex:none;font:800 1rem var(--f-display);color:var(--joker);background:var(--joker-soft);border-radius:8px;padding:6px 9px;font-variant-numeric:tabular-nums}
+.joker.have{border-color:var(--joker)}
+.queued{display:flex;flex-direction:column;gap:6px}
+.queued div{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.9rem}
+
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);
+  padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));z-index:10}
+.bar>div{max-width:560px;margin:0 auto;display:flex;gap:10px;align-items:center}
+.bar .btn-primary{flex:1}
+.bar .hint{flex:1;font-size:.9rem;color:var(--muted)}
+
+.rank{display:flex;flex-direction:column;gap:8px}
+.rank div{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.rank div:first-child{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.rank b{font:800 1.3rem var(--f-display);font-variant-numeric:tabular-nums}
+.players input{flex:1}
+.players .row{flex-wrap:nowrap}
+.qr{background:#fff;padding:10px;border-radius:10px;align-self:flex-start;line-height:0}
+.qr img,.qr canvas{width:176px;height:176px}
+.tag{font-size:.7rem;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:1px 8px;white-space:nowrap}
+.genform{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.genform label{display:flex;flex-direction:column;gap:4px;min-width:0}
+.genform label:nth-child(-n+2){grid-column:1/-1}
+.distbox{border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:10px}
+.distbox[open]{display:flex}
+.distbox summary{cursor:pointer;font-weight:600;font-size:.92rem}
+.distbox label{display:flex;flex-direction:column;gap:4px;margin-top:8px}
+.distbox input[type=range]{width:100%;accent-color:var(--accent)}
+#distViz{margin-top:8px}
+.roomcode{font:800 2.4rem/1 var(--f-display);letter-spacing:.18em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.sound{border:1px solid var(--line)}
+.sound.on{color:var(--good);border-color:var(--good)}
+.rules{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:4px;font-size:.9rem}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+'use strict';
+const app = document.getElementById('app');
+const JOIN_ID = new URLSearchParams(location.search).get('join');
+const GUEST = !!JOIN_ID; // Handy eines Mitspielers
+const IN_APP = /ZeitstrahlApp/.test(navigator.userAgent); // Android-App
+const PEERJS = 'https://cdn.jsdelivr.net/npm/peerjs@1.5.4/dist/peerjs.min.js';
+// Früher gemerkte Jahre und Suchergebnisse entfernen: Jahre werden jetzt immer frisch bestimmt
+try{for(let i=localStorage.length-1;i>=0;i--){const k=localStorage.key(i);if(/^zs_(dz|mb|sp):/.test(k))localStorage.removeItem(k)}}catch{}
+const LS = {
+  get(k,d){try{const v=localStorage.getItem('zs_'+k);return v==null?d:JSON.parse(v)}catch{return d}},
+  set(k,v){try{localStorage.setItem('zs_'+k,JSON.stringify(v))}catch{}},
+  del(k){try{localStorage.removeItem('zs_'+k)}catch{}}
+};
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const decade = y => y < 1950 ? 'dold' : 'd' + Math.min(2020, Math.floor(y/10)*10);
+const decadeName = y => Math.floor(y/10)*10 + 'er';
+const shuffle = a => { a = a.slice(); for (let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]} return a; };
+
+/* Joker: Kosten in Jokerpunkten. Hilfen gelten für den eigenen nächsten Zug, Sabotage für den Zug eines anderen. */
+// Logo: TT – zwei rote T mit gelbem Rand vor einer schwarzen Schallplatte
+const LOGO = `<svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="totSheenA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ee8ff" stop-opacity=".55"/><stop offset="1" stop-color="#3ee8ff" stop-opacity="0"/></linearGradient><linearGradient id="totSheenB" x1="1" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff4fd8" stop-opacity=".5"/><stop offset="1" stop-color="#ff4fd8" stop-opacity="0"/></linearGradient></defs><rect x="0" y="0" width="64" height="64" rx="14" fill="#ffffff"/><circle cx="33.8" cy="36.8" r="25.5" fill="#000000" opacity="0.18"/><circle cx="32" cy="35" r="25.5" fill="#121212"/><g fill="none" stroke-width="0.3"><circle cx="32" cy="35" r="24.10" stroke="#262626"/><circle cx="32" cy="35" r="23.55" stroke="#0a0a0a"/><circle cx="32" cy="35" r="23.00" stroke="#262626"/><circle cx="32" cy="35" r="22.45" stroke="#0a0a0a"/><circle cx="32" cy="35" r="21.90" stroke="#262626"/><circle cx="32" cy="35" r="21.35" stroke="#0a0a0a"/><circle cx="32" cy="35" r="20.80" stroke="#262626"/><circle cx="32" cy="35" r="20.25" stroke="#0a0a0a"/><circle cx="32" cy="35" r="19.70" stroke="#262626"/><circle cx="32" cy="35" r="19.15" stroke="#0a0a0a"/><circle cx="32" cy="35" r="18.60" stroke="#262626"/><circle cx="32" cy="35" r="18.05" stroke="#0a0a0a"/><circle cx="32" cy="35" r="17.50" stroke="#262626"/><circle cx="32" cy="35" r="16.95" stroke="#0a0a0a"/><circle cx="32" cy="35" r="16.40" stroke="#262626"/><circle cx="32" cy="35" r="15.85" stroke="#0a0a0a"/><circle cx="32" cy="35" r="15.30" stroke="#262626"/><circle cx="32" cy="35" r="14.75" stroke="#0a0a0a"/><circle cx="32" cy="35" r="14.20" stroke="#262626"/><circle cx="32" cy="35" r="13.65" stroke="#0a0a0a"/><circle cx="32" cy="35" r="13.10" stroke="#262626"/><circle cx="32" cy="35" r="12.55" stroke="#0a0a0a"/><circle cx="32" cy="35" r="12.00" stroke="#262626"/><circle cx="32" cy="35" r="11.45" stroke="#0a0a0a"/><circle cx="32" cy="35" r="10.90" stroke="#262626"/><circle cx="32" cy="35" r="10.35" stroke="#0a0a0a"/><circle cx="32" cy="35" r="9.80" stroke="#262626"/><circle cx="32" cy="35" r="9.25" stroke="#0a0a0a"/><circle cx="32" cy="35" r="8.70" stroke="#262626"/></g><path d="M8.98 26.62A24.5 24.5 0 0 1 25.66 11.33L29.77 26.69A8.6 8.6 0 0 0 23.92 32.06Z" fill="url(#totSheenA)"/><path d="M55.02 43.38A24.5 24.5 0 0 1 38.34 58.67L34.23 43.31A8.6 8.6 0 0 0 40.08 37.94Z" fill="url(#totSheenB)"/><circle cx="32" cy="35" r="25.1" fill="none" stroke="#000000" stroke-width="0.8"/><circle cx="32" cy="35" r="7.6" fill="#ffd23a"/><circle cx="32" cy="35" r="7.6" fill="none" stroke="#000000" stroke-width="0.5"/><circle cx="32" cy="35" r="3.3" fill="#121212"/><g transform="translate(1.6 1.6)" fill="#000000" stroke="#000000" stroke-width="1.6" stroke-linejoin="round"><rect x="12.2" y="22.00" width="19" height="6.6" rx="2.2"/><rect x="18.5" y="22.00" width="6.4" height="20.6" rx="2.2"/><rect x="32.8" y="22.00" width="19" height="6.6" rx="2.2"/><rect x="39.099999999999994" y="22.00" width="6.4" height="20.6" rx="2.2"/></g><g fill="#ffd23a" stroke="#ffd23a" stroke-width="1.6" stroke-linejoin="round"><rect x="12.2" y="22.00" width="19" height="6.6" rx="2.2"/><rect x="18.5" y="22.00" width="6.4" height="20.6" rx="2.2"/><rect x="32.8" y="22.00" width="19" height="6.6" rx="2.2"/><rect x="39.099999999999994" y="22.00" width="6.4" height="20.6" rx="2.2"/></g><g fill="#ff2e3b"><rect x="12.2" y="22.00" width="19" height="6.6" rx="2.2"/><rect x="18.5" y="22.00" width="6.4" height="20.6" rx="2.2"/><rect x="32.8" y="22.00" width="19" height="6.6" rx="2.2"/><rect x="39.099999999999994" y="22.00" width="6.4" height="20.6" rx="2.2"/></g><path d="M55.5 7.3Q55.5 10.5 58.7 10.5Q55.5 10.5 55.5 13.7Q55.5 10.5 52.3 10.5Q55.5 10.5 55.5 7.3Z" fill="#ffd23a"/><path d="M9.5 9.3Q9.5 11.5 11.7 11.5Q9.5 11.5 9.5 13.7Q9.5 11.5 7.3 11.5Q9.5 11.5 9.5 9.3Z" fill="#ffd23a"/><path d="M51 14.9Q51 16.5 52.6 16.5Q51 16.5 51 18.1Q51 16.5 49.4 16.5Q51 16.5 51 14.9Z" fill="#ff2e3b"/></svg>`;
+const JOKERS = {
+  genre:    {name:'Genre wählen',       desc:'Du bestimmst das Genre deines nächsten Songs.',             cost:1, kind:'help'},
+  hideWrong:{name:'Falsche ausblenden', desc:'Bei deinem nächsten Zug verschwinden die falsch eingeordneten Songs aus dem Zeitstrahl.', cost:1, kind:'help', needs:'keepWrong'},
+  decade:   {name:'Jahrzehnt verraten', desc:'Du erfährst, aus welchem Jahrzehnt dein nächster Song ist.', cost:2, kind:'help'},
+  double:   {name:'Doppelte Punkte',    desc:'Liegst du beim nächsten Song richtig, gibt es 2 Punkte.',   cost:2, kind:'help'},
+  snippet:  {name:'Kurzer Ausschnitt',  desc:'Der Song läuft nur 10 Sekunden ab einer zufälligen Stelle.', cost:1, kind:'sab'},
+  turbo:    {name:'Turbo',              desc:'Der Song läuft fast doppelt so schnell und höher.',          cost:2, kind:'sab'},
+  reverse:  {name:'Rückwärts',          desc:'Der Song läuft rückwärts.',                                  cost:3, kind:'sab'}
+};
+// Joker, die nur mit einer bestimmten Spielregel Sinn ergeben
+function jokerOn(type){const J=JOKERS[type];if(type==='genre'&&V&&V.genreFixed)return false;return !!J&&(!J.needs||!!(V&&V[J.needs]))}
+
+const S = {
+  screen:'home', mode:null, clientId:LS.get('clientId',''), token:null, me:null,
+  playlists:null, plError:null, source:null, tracks:[], loading:null,
+  roster:LS.get('names',['Spieler 1']).map(name=>({name})), target:LS.get('target',10), keepWrong:LS.get('keepWrong',false), goal:LS.get('goal','target'), roundSongs:LS.get('roundSongs',30), bonus:LS.get('bonus',false), noJokers:LS.get('noJokers',false), bonusIn:{artist:'',title:''},
+  devices:[], deviceId:LS.get('deviceId',null), sdkDeviceId:null, player:null, sdkPromise:null,
+  players:[], timeline:[], deck:[], cur:0, mystery:null, slot:null, phase:'guess', result:null,
+  turnFx:{}, shop:null, hosted:false, invite:null, showInvite:false, inviteMode:'internet', minY:1950, maxY:2025, jpPop:null,
+  audioKind:null, playing:false, started:false, noAudio:false, ctx:null, revBuf:null, revSrc:null
+};
+
+/* ---------- Hilfen ---------- */
+let toastTimer;
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.hidden=true,5000)}
+function go(screen){S.screen=screen;render();window.scrollTo(0,0)}
+
+const b64url = buf => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+const randBytes = n => { const a=new Uint8Array(n); crypto.getRandomValues(a); return a; };
+
+/* ---------- Playlist automatisch erstellen (Deezer) ----------
+   Deezer liefert die bekanntesten Künstler eines Genres und deren Top-Songs mit einem
+   Beliebtheitswert (rank, 0 bis 1.000.000). Jeder passende Song wird danach bei Deezer genauer geprüft;
+   das Jahr kommt von der frühesten passenden Veröffentlichung. */
+const DZ_LEVELS=[
+  {id:'hits',name:'Nur Welthits',min:850000},
+  {id:'known',name:'Sehr bekannt',min:700000},
+  {id:'some',name:'Bekannt',min:500000},
+  {id:'all',name:'Egal',min:0},
+];
+const GEN_DEF={genre:'',level:'known',from:1950,to:2026,count:100,perArtist:3,src:'deezer',mb:true,dist:'even',mu:2000,sigma:15};
+S.gen={...GEN_DEF,...LS.get('gen',{}),genres:null,genErr:null,busy:false};
+function dz(path,params={}){
+  return jsonp('https://api.deezer.com'+path+'?'+new URLSearchParams({...params,output:'jsonp'})).then(d=>{
+    if(d&&d.error) throw new Error(d.error.message||'Deezer-Fehler');
+    return d;
+  });
+}
+async function loadDzGenres(){
+  if(S.gen.genres||S.gen.genresLoading) return;
+  S.gen.genresLoading=true;
+  try{
+    const d=await dz('/genre');
+    S.gen.genres=(d.data||[]).map(g=>({id:String(g.id),name:g.id===0?'Alle Genres':g.name}));
+    if(!S.gen.genre||!S.gen.genres.some(g=>g.id===S.gen.genre)) S.gen.genre=(S.gen.genres.find(g=>g.id!=='0')||S.gen.genres[0])?.id||'';
+  }catch{S.gen.genErr='Die Genres von Deezer ließen sich nicht laden. Prüfe die Internetverbindung.'}
+  S.gen.genresLoading=false;
+  if(S.screen==='home') render();
+}
+function genProgress(t){const el=document.getElementById('genProg');if(el)el.textContent=t}
+
+/* Deezer als Quelle: Jahr vom frühesten passenden Deezer-Album, Wiedergabe mit Deezer-Ausschnitten */
+let dzNext=0;
+async function dzPace(){const now=Date.now(),at=Math.max(now,dzNext);dzNext=at+120;if(at>now)await wait(at-now)}
+const dzAlbums={};
+async function dzAlbum(id){
+  if(id in dzAlbums) return dzAlbums[id];
+  await dzPace();
+  try{dzAlbums[id]=await dz(`/album/${id}`)}catch{dzAlbums[id]=null}
+  return dzAlbums[id];
+}
+async function deezerResolve(c){
+  await dzPace();
+  let r={data:[]};
+  try{r=await dz('/search/track',{q:`artist:"${c.artist}" track:"${c.title}"`,limit:15})}catch{}
+  const t=norm(cleanTitle(c.title)), a=norm(c.artist);
+  const same=(r.data||[]).filter(x=>{
+    const n=norm(cleanTitle(x.title_short||x.title)), an=norm(x.artist?.name||'');
+    return n&&an&&(n.startsWith(t)||t.startsWith(n))&&(an.includes(a)||a.includes(an));
+  });
+  const ids=[...new Set([c.albumId,...same.map(x=>x.album?.id)].filter(Boolean))].slice(0,4);
+  let best=null;
+  for(const id of ids){
+    const al=await dzAlbum(id);
+    const y=al?parseInt(String(al.release_date||'').slice(0,4),10):0;
+    if(y>1850&&(!best||y<best.year)) best={year:y,img:al.cover_medium||al.cover,genre:al.genres?.data?.[0]?.name||null};
+  }
+  const card=best&&c.dzId?{id:'dz'+c.dzId,dzId:c.dzId,title:c.title,artist:c.artist,year:best.year,img:best.img||c.img||null,genre:bucket(best.genre)}:null;
+  return {cached:false,card};
+}
+/* Jahre prüfen mit MusicBrainz: freie Musikdatenbank mit dem Jahr der ersten Veröffentlichung.
+   MusicBrainz erlaubt etwa eine Anfrage pro Sekunde. */
+let mbNext=0;
+async function mbPace(){const now=Date.now(),at=Math.max(now,mbNext);mbNext=at+1100;if(at>now)await wait(at-now)}
+const MB_BUCKETS=new Set(['Hip-Hop','Soul & R&B','Dance & Elektro','Deutsch','Indie & Alternative','Metal','Rock','Pop','Reggae','Jazz & Blues','Country & Folk','Soundtrack','Klassik']);
+const mbArtistGenre=new Map(); // nur für die laufende Sitzung, wird nicht gespeichert
+// Häufigstes MusicBrainz-Genre bzw. -Tag, das zu einem Spiel-Genre passt
+function mbBucket(list){
+  for(const t of [...(list||[])].sort((a,b)=>(b.count||0)-(a.count||0))){const b=bucket(t.name);if(MB_BUCKETS.has(b))return b}
+  return null;
+}
+async function mbGet(path,params){
+  for(let i=0;i<3;i++){
+    await mbPace();
+    const r=await fetch('https://musicbrainz.org/ws/2/'+path+'?'+new URLSearchParams({...params,fmt:'json'}));
+    if(r.status===503||r.status===429){await wait(2500);continue}
+    if(r.status===404) return {};
+    if(!r.ok) throw new Error('MusicBrainz '+r.status);
+    return await r.json();
+  }
+  throw new Error('MusicBrainz ausgelastet');
+}
+/* Jahr (und auf Wunsch Genre) bei MusicBrainz:
+   1. Die genaue Aufnahme über ihre ISRC finden (Kennung, die Deezer mitliefert). Nur wenn das nichts ergibt,
+      nach Titel und Interpret suchen.
+   2. Als Jahr zählt die früheste offizielle Single, EP oder das früheste offizielle Album mit dieser Aufnahme.
+      Sammlungen, Live-Platten, Remixe, Demos und Bootlegs zählen nicht.
+   Rückgabe: null = MusicBrainz nicht erreichbar, sonst {year (0 = unbekannt), genre} */
+async function mbInfo(c,wantGenre){
+  const title=cleanTitle(c.title), full=String(c.artist).split(/ feat\.? | ft\.? /i)[0].trim(), art=full.split(/,| & /)[0].trim();
+  const q=s=>'"'+String(s).replace(/(["\\])/g,'\\$1')+'"';
+  const artistOk=rec=>{
+    const names=(rec['artist-credit']||[]).map(a=>a.name||a.artist?.name||'');
+    const credit=(rec['artist-credit']||[]).map(a=>(a.name||a.artist?.name||'')+(a.joinphrase||'')).join('');
+    return names.some(n=>similar(n,art)||similar(n,full))||similar(credit,full);
+  };
+  const BAD=['compilation','live','remix','dj-mix','demo','interview','spokenword','audio drama'];
+  const relOk=r=>{
+    const rg=r['release-group']||{}, st=String(r.status||'').toLowerCase(), pt=String(rg['primary-type']||'').toLowerCase();
+    const sec=(rg['secondary-types']||[]).map(x=>String(x).toLowerCase());
+    return (!st||st==='official')&&['album','single','ep'].includes(pt)&&!sec.some(x=>BAD.includes(x));
+  };
+  const yearOf=rec=>{
+    if(!Array.isArray(rec.releases)){const y=parseInt(String(rec['first-release-date']||'').slice(0,4),10);return y>1850?y:0}
+    let y=0;
+    for(const r of rec.releases){if(!relOk(r))continue;const v=parseInt(String(r.date||'').slice(0,4),10);if(v>1850&&(!y||v<y))y=v}
+    return y;
+  };
+  try{
+    let isrc=null;
+    if(c.dzId){try{await dzPace();isrc=(await dz(`/track/${c.dzId}`)).isrc||null}catch{}}
+    let recs=[];
+    if(isrc){
+      const j=await mbGet('recording',{query:`isrc:${isrc}`,limit:'25'});
+      recs=(j.recordings||[]).filter(artistOk);
+    }
+    if(!recs.length){
+      const j=await mbGet('recording',{query:`recording:${q(title)} AND (artist:${q(full)} OR artist:${q(art)})`,limit:'100'});
+      recs=(j.recordings||[]).filter(rec=>(rec.score||0)>=70&&similar(cleanTitle(rec.title||''),title)&&artistOk(rec));
+    }
+    recs=recs.filter(rec=>!/\b(live|remix|demo|karaoke|instrumental|cover)\b/i.test(rec.disambiguation||''));
+    let year=0, bestRec=null;
+    for(const rec of recs){const y=yearOf(rec);if(y&&(!year||y<year)){year=y;bestRec=rec}}
+    let genre=null;
+    if(wantGenre){
+      genre=mbBucket(recs.flatMap(r=>[...(r.genres||[]),...(r.tags||[])]));
+      const aid=(bestRec||recs[0])?.['artist-credit']?.[0]?.artist?.id;
+      if(!genre&&aid){
+        if(!mbArtistGenre.has(aid)){
+          try{const a=await mbGet(`artist/${aid}`,{inc:'genres tags'});mbArtistGenre.set(aid,mbBucket([...(a.genres||[]),...(a.tags||[])]))}
+          catch{mbArtistGenre.set(aid,null)}
+        }
+        genre=mbArtistGenre.get(aid);
+      }
+    }
+    return {year,genre};
+  }catch{return null}
+}
+// Ergebnis von MusicBrainz übernehmen. Ein Jahr wird nur nach vorne korrigiert: Ein späteres Jahr
+// ist fast immer eine Neuauflage, das frühere Deezer-Jahr bleibt dann stehen.
+function mbApply(c,m){
+  if(!m) return false;
+  c.mbOk=true;
+  if(m.genre) c.genre=m.genre;
+  if(m.year&&m.year<c.year){c.year=m.year;return true}
+  return false;
+}
+/* Zielverteilung der Songs über den Zeitraum: gleichmäßig oder als Glockenkurve mit Höhepunkt und Breite */
+function genBins(g,from,to){
+  const curve=g.dist==='curve', span=to-from+1;
+  const binW=curve?(span<=60?5:10):(span<=20?5:10), bins=[];
+  for(let y=from;y<=to;y+=binW)bins.push({lo:y,hi:Math.min(to,y+binW-1),songs:[]});
+  const mu=Math.max(from,Math.min(to,g.mu)), sd=Math.max(1,g.sigma);
+  const W=bins.map(b=>{if(!curve)return 1;let w=0;for(let y=b.lo;y<=b.hi;y++)w+=Math.exp(-((y-mu)**2)/(2*sd*sd));return w});
+  const sw=W.reduce((a,b)=>a+b,0)||1, raw=W.map(w=>g.count*w/sw), qi=raw.map(Math.floor);
+  let rest=g.count-qi.reduce((a,b)=>a+b,0);
+  raw.map((r,i)=>[r-qi[i],i]).sort((a,b)=>b[0]-a[0]).slice(0,rest).forEach(([,i])=>qi[i]++);
+  bins.forEach((b,i)=>{b.q=qi[i];b.w=W[i]});
+  return {bins,binW,mu};
+}
+function distSvg(){
+  const g=S.gen, from=Math.min(g.from,g.to), to=Math.max(g.from,g.to);
+  const {bins,mu}=genBins(g,from,to);
+  const Wd=320,H=130,pad=22,top=8, x=y=>pad+(y-from)/(to+1-from)*(Wd-2*pad);
+  const maxQ=Math.max(1,...bins.map(b=>b.q)), h=q=>q/maxQ*(H-top-pad)*0.82;
+  const bars=bins.map(b=>{const x0=x(b.lo)+1,x1=x(b.hi+1)-1,hh=h(b.q);
+    return `<rect x="${x0.toFixed(1)}" y="${(H-pad-hh).toFixed(1)}" width="${Math.max(1,x1-x0).toFixed(1)}" height="${hh.toFixed(1)}" rx="2" fill="var(--accent)" opacity=".28"/>`
+      +(b.q?`<text x="${((x0+x1)/2).toFixed(1)}" y="${(hh>16?H-pad-hh+11:H-pad-hh-3).toFixed(1)}" text-anchor="middle" font-size="9" font-weight="600" fill="var(--ink)">${b.q}</text>`:'')}).join('');
+  let path='';
+  if(g.dist==='curve'){
+    // Kurve auf ihre eigene Spitze skaliert: zeigt die Form, die Balken zeigen die Anzahl
+    const sd=Math.max(1,g.sigma);
+    for(let i=0;i<=80;i++){const y=from+(to+1-from)*i/80, v=Math.exp(-((y+0.5-mu-0.5)**2)/(2*sd*sd));
+      path+=(i?'L':'M')+x(y).toFixed(1)+','+(H-pad-v*(H-top-pad)).toFixed(1)}
+  }
+  // Jahreszahlen an den Abschnittsgrenzen, ohne dass sie sich überlappen
+  const minGap=30;let lastX=-1e9;const tk=[];
+  for(const y of bins.map(b=>b.lo)){const xx=x(y);if(xx-lastX>=minGap&&x(to+1)-xx>=minGap){tk.push([y,xx]);lastX=xx}}
+  tk.push([to,x(to+1)]);
+  const ticks=tk.map(([y,xx],i)=>`<text x="${xx.toFixed(1)}" y="${H-8}" text-anchor="${i===0&&xx<=pad+1?'start':i===tk.length-1?'end':'middle'}" font-size="9" fill="var(--muted)">${y}</text>`).join('');
+  return `<svg viewBox="0 0 ${Wd} ${H}" width="100%" role="img" aria-label="Geplante Verteilung der Songs über die Jahre">
+    <line x1="${pad}" x2="${Wd-pad}" y1="${H-pad}" y2="${H-pad}" stroke="var(--line)"/>${bars}
+    ${path?`<path d="${path}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/>
+    <line x1="${x(mu+.5).toFixed(1)}" x2="${x(mu+.5).toFixed(1)}" y1="${top}" y2="${H-pad}" stroke="var(--accent)" stroke-dasharray="3 3" opacity=".6"/>`:''}${ticks}</svg>`;
+}
+function distPanel(){
+  const g=S.gen, from=Math.min(g.from,g.to), to=Math.max(g.from,g.to), mu=Math.max(from,Math.min(to,g.mu));
+  return `<details class="distbox" ${g.dist==='curve'||g.distOpen?'open':''} id="distBox"><summary>Erweitert: Verteilung über die Jahre</summary>
+    <label><span class="label">Verteilung</span><select id="genDist">
+      <option value="even" ${g.dist!=='curve'?'selected':''}>Gleichmäßig über den Zeitraum</option>
+      <option value="curve" ${g.dist==='curve'?'selected':''}>Eigene Kurve (Glocke)</option></select></label>
+    <div id="distViz">${distSvg()}</div>
+    ${g.dist==='curve'?`<label><span class="label">Schwerpunkt: <b id="muVal">${mu}</b></span>
+      <input type="range" id="genMu" min="${from}" max="${to}" step="1" value="${mu}"></label>
+      <label><span class="label">Breite: <b id="sdVal">${sdText(g.sigma)}</b></span>
+      <input type="range" id="genSigma" min="2" max="50" step="1" value="${g.sigma}"></label>`:''}
+    <p class="small muted">Die Balken zeigen, wie viele Songs aus welchem Abschnitt kommen sollen. Das ist eine grobe Vorgabe: Fehlen in einem Abschnitt Songs, füllen Songs aus den Nachbarn mit dem meisten Gewicht auf.</p>
+  </details>`;
+}
+const sdText=s=>s<=6?`schmal (±${s} Jahre)`:s<=18?`mittel (±${s} Jahre)`:`breit (±${s} Jahre)`;
+function updDist(){
+  const v=document.getElementById('distViz'); if(!v) return;
+  const g=S.gen, from=Math.min(g.from,g.to), to=Math.max(g.from,g.to);
+  const m=document.getElementById('genMu');
+  if(m){m.min=from;m.max=to;if(g.mu<from||g.mu>to){g.mu=Math.max(from,Math.min(to,g.mu));m.value=g.mu}}
+  const mv=document.getElementById('muVal');if(mv)mv.textContent=Math.max(from,Math.min(to,g.mu));
+  const sv=document.getElementById('sdVal');if(sv)sv.textContent=sdText(g.sigma);
+  v.innerHTML=distSvg();
+}
+async function generatePlaylist(){
+  const g=S.gen;
+  if(g.busy) return;
+  const lvl=DZ_LEVELS.find(l=>l.id===g.level)||DZ_LEVELS[1];
+  const from=Math.min(g.from,g.to), to=Math.max(g.from,g.to);
+  const useDz=true;
+  LS.set('gen',{genre:g.genre,level:g.level,from:g.from,to:g.to,count:g.count,perArtist:g.perArtist,src:g.src,mb:g.mb,dist:g.dist,mu:g.mu,sigma:g.sigma});
+  g.busy=true;g.cancel=false;g.genErr=null;render();
+  const chk=()=>{if(g.cancel){const e=new Error('cancel');e.cancel=true;throw e}};
+  try{
+    // 1. Quellen sammeln: Genre-Radios und kuratierte Deezer-Playlists, für jedes Jahrzehnt eigene
+    const gname=(g.genres||[]).find(x=>x.id===g.genre)?.name||'';
+    const all=g.genre==='0';
+    const decades=[];for(let d=Math.floor(from/10)*10;d<=to;d+=10)decades.push(d);
+    const {bins,binW}=genBins(g,from,to);
+    // Bei eigener Kurve nur in Jahrzehnten suchen, aus denen überhaupt Songs kommen sollen
+    if(g.dist==='curve'){const keep=decades.filter(d=>bins.some(b=>b.q>0&&b.hi>=d&&b.lo<=d+9));if(keep.length)decades.splice(0,decades.length,...keep)}
+    const lists=[]; // {path, label, limit, decade}
+    genProgress('Suche passende Radios und Playlists bei Deezer …');
+    if(all){ if(to>=2015) lists.push({path:'/chart/0/tracks',label:'Charts',limit:100}); }
+    else{try{const r=await dz(`/genre/${g.genre}/radios`);(r.data||[]).slice(0,12).forEach(x=>lists.push({path:`/radio/${x.id}/tracks`,label:x.title}))}catch{}}
+    chk();
+    // Jahrzehnt-Namen eindeutig: „60s“ erst ab 1950, davor nur „1920s“ (sonst wäre „20s“ auch 2020)
+    const decNames=d=>d>=1950?[`${String(d).slice(2)}s`,`${d}s`,`${d}er`]:[`${d}s`,`${d}er`];
+    // Eine Playlist passt zum Jahrzehnt, wenn ihr Name das Jahrzehnt oder ein Jahr daraus nennt („Hits 2014“)
+    const decOk=(t,d)=>{
+      if(d>=1950&&new RegExp(`(^|[^0-9])${String(d).slice(2,3)}0(s|er)([^0-9]|$)`).test(t)) return true;
+      for(let y=d;y<d+10;y++) if(t.includes(String(y))) return true;
+      return false;
+    };
+    const genreWords=all?[]:norm(gname).split(' ').filter(w=>w.length>2);
+    const plOk=(pl,decade)=>{
+      const t=norm(pl.title);
+      if(pl.nb_tracks<15) return false;
+      if(genreWords.length&&!genreWords.some(w=>t.includes(w))) return false;
+      if(decade!=null&&!decOk(t,decade)) return false;
+      return true;
+    };
+    const queries=[];
+    const gq=all?[]:[`${gname} classics`,`best of ${gname}`,`${gname} hits`,`greatest ${gname}`,`${gname} essentials`,`${gname} anthems`];
+    gq.forEach(q=>queries.push({q,decade:null,max:2}));
+    const perD={};
+    for(const d of decades){
+      const qs=perD[d]=[];
+      for(const n of decNames(d))
+        (all?[`${n} hits`,`best of ${n}`,`${n} music`,`top ${n}`,`${n} party`,`${n} classics`]
+            :[`${gname} ${n}`,`${n} ${gname}`,`best of ${n} ${gname}`,`${gname} hits ${n}`]).forEach(q=>qs.push({q,decade:d,max:3}));
+      // Ab 1980 gibt es viele Jahres-Playlists („Hits 2014“, „Rock 1997“): je Jahr eine Suche
+      for(let y=Math.max(from,d,1980);y<=Math.min(to,d+9);y++) qs.push({q:all?`hits ${y}`:`${gname} ${y}`,decade:d,max:2});
+      perD[d]=shuffle(qs);
+    }
+    // Reihum: erst ein Suchbegriff je Jahrzehnt, dann der nächste. So kommt kein Jahrzehnt zu kurz
+    for(let added=true;added;){added=false;for(const d of decades){const x=perD[d].shift();if(x){queries.push(x);added=true}}}
+    const seenPl=new Set(), perDec={};
+    const cap=k=>k==='x'?10:10;
+    for(const {q,decade,max} of queries){
+      chk();
+      const key=decade??'x';
+      if((perDec[key]||0)>=cap(key)) continue;
+      try{
+        const r=await dz('/search/playlist',{q,limit:15});
+        (r.data||[]).filter(pl=>plOk(pl,decade)).slice(0,max).forEach(pl=>{
+          if(seenPl.has(pl.id)||(perDec[key]||0)>=cap(key)) return;
+          seenPl.add(pl.id);perDec[key]=(perDec[key]||0)+1;
+          lists.push({path:`/playlist/${pl.id}/tracks`,label:pl.title,limit:200,decade});
+        });
+      }catch{}
+      await wait(110);
+    }
+    if(!lists.length) throw new Error(`Deezer hat zu „${gname||'diesem Genre'}“ im gewählten Zeitraum keine Radios oder Playlists gefunden.`);
+    // 2. Songs aus den Quellen laden: nach Bekanntheit filtern, Live-, Remix- und Karaoke-Fassungen weglassen
+    const junk=/\b(live|karaoke|instrumental|remix|cover|tribute|re-?recorded|sped up|slowed|nightcore|8-bit|lullaby)\b/i;
+    const cands=[], seenT=new Set();
+    for(let i=0;i<lists.length;i++){
+      chk();
+      genProgress(`Lade Songs bei Deezer: ${i+1} von ${lists.length} Listen (${lists[i].label}) …`);
+      try{
+        const r=await dz(lists[i].path,lists[i].limit?{limit:lists[i].limit}:{});
+        for(const t of r.data||[]){
+          if(!t||!t.title||!t.artist?.name||(t.rank||0)<lvl.min) continue;
+          if(junk.test(t.title)||junk.test(t.artist.name)) continue;
+          const title=t.title_short||t.title;
+          const k=norm(title)+'|'+norm(t.artist.name);
+          if(seenT.has(k)) continue; seenT.add(k);
+          cands.push({title,artist:t.artist.name,artistId:t.artist.id||t.artist.name,rank:t.rank,decade:lists[i].decade,dzId:t.id,albumId:t.album?.id,img:t.album?.cover_medium||null});
+        }
+      }catch{}
+      await wait(110); // Deezer erlaubt etwa 50 Anfragen in 5 Sekunden
+    }
+    if(!cands.length) throw new Error(`Keine Songs mit „${lvl.name}“ gefunden. Wähle eine niedrigere Bekanntheit.`);
+    // 3. Zeitraum in gleich große Abschnitte teilen; jeder Abschnitt soll etwa gleich viele Songs bekommen
+    const binOf=y=>bins[Math.min(bins.length-1,Math.floor((y-from)/binW))];
+    // Kandidaten nach ihrem Jahrzehnt-Hinweis reihum mischen, damit alle Zeiträume früh geprüft werden
+    // Jede Quelle gehört zu einem Jahrzehnt. Als Nächstes wird immer ein Song aus dem Jahrzehnt geprüft,
+    // das gerade am wenigsten Songs hat. Bringt ein Jahrzehnt lange nichts, kommen die anderen dran.
+    const groups={};for(const c of shuffle(cands)){const k=c.decade??'x';(groups[k]=groups[k]||{list:[],miss:0,tried:0,got:0,lists:0,cands:0}).list.push(c)}
+    for(const k in groups) groups[k].cands=groups[k].list.length;
+    lists.forEach(l=>{const k=l.decade??'x';if(groups[k])groups[k].lists++});
+    // Abschnitt eines Jahrzehnts mit den wenigsten Songs (bei 5-Jahres-Abschnitten gibt es zwei)
+    const fill=b=>b.songs.length/Math.max(1,g.mb&&b.q?Math.ceil(b.q*1.3)+1:b.q);
+    const binFor=k=>{if(k==='x')return null;let r=null;for(const b of bins)if(b.q>0&&b.songs.length<(g.mb?Math.ceil(b.q*1.3)+1:b.q)&&b.hi>=+k&&b.lo<=+k+9&&(!r||fill(b)<fill(r)))r=b;return r};
+    const nextCand=()=>{
+      let bestK=null,bestN=Infinity;
+      for(const k in groups){
+        const gr=groups[k],b=binFor(k);
+        if(!gr.list.length||!b||gr.miss>=60) continue;
+        const n=fill(b)+Math.random()*0.1;
+        if(n<bestN){bestN=n;bestK=k}
+      }
+      if(bestK==null){
+        const ks=Object.keys(groups).filter(k=>groups[k].list.length);
+        if(!ks.length) return null;
+        bestK=ks.includes('x')?'x':ks[Math.floor(Math.random()*ks.length)];
+      }
+      const c=groups[bestK].list.shift();c.gk=bestK;return c;
+    };
+    const seen=new Set(), perArtist={};
+    let tried=0, found=0;
+    const maxTries=Math.max(g.count*(bins.length>6?10:6),400);
+    let outOfRange=0, noMatch=0, lastGain=0, cached=0, blocked=0;
+    const full=()=>bins.every(b=>b.songs.length>=(g.mb&&b.q?Math.ceil(b.q*1.3)+1:b.q));
+    // So viele Songs kämen jetzt bei gleichmäßiger Verteilung in die Playlist
+    const usable=()=>{let n=0,spare=0;for(const b of bins){n+=Math.min(b.songs.length,b.q);spare+=Math.max(0,b.songs.length-b.q)}return n+Math.min(spare,Math.max(0,g.count-n))};
+    // 4. Erscheinungsjahr bei Deezer bestimmen: das früheste passende Album zählt.
+    // Mit MusicBrainz-Prüfung etwas Vorrat je Abschnitt sammeln, weil Korrekturen Songs verschieben
+    const need=b=>g.mb&&b.q?Math.ceil(b.q*1.3)+1:b.q;
+    async function resolveOne(c){
+      const gr=groups[c.gk];
+      tried++;gr.tried++;gr.miss++;
+      try{
+        let card=(await deezerResolve(c)).card;chk();
+        if(card&&!card.genre&&g.genre!=='0'&&gname) card={...card,genre:bucket(gname)};
+        if(!card){noMatch++;return null}
+        if(card.year<from||card.year>to){outOfRange++;return null}
+        if(seen.has(card.id)) return null;
+        const key=norm(card.title)+'|'+norm(card.artist);
+        if(seen.has(key)||(perArtist[c.artistId]||0)>=g.perArtist) return null;
+        seen.add(card.id);seen.add(key);perArtist[c.artistId]=(perArtist[c.artistId]||0)+1;
+        const bin=binOf(card.year);if(bin.songs.length<need(bin))lastGain=tried;
+        if(c.gk!=='x'&&card.year>=+c.gk&&card.year<=+c.gk+9){gr.miss=0;gr.got++}
+        bin.songs.push(card);found++;
+        return card;
+      }catch(e){
+        if(e.cancel||e.stop||e.status===401||e.status===403)throw e;
+        blocked++;
+        // Antwortet Deezer dauerhaft nicht, nicht minutenlang weiterprobieren
+        if(blocked>=3&&!g.cancel){g.cancel=true;const err=new Error('Deezer antwortet gerade nicht zuverlässig. Prüfe die Internetverbindung und versuch es in ein paar Minuten noch einmal.');err.stop=true;throw err}
+        return null;
+      }
+    }
+    await Promise.all(Array.from({length:3},async()=>{
+      // Weitersuchen, bis jeder Zeitabschnitt seinen Anteil hat. Aufhören erst, wenn ein Abschnitt
+      // lange nichts mehr dazubekommt (dann gibt es dafür bei Deezer kaum Songs) oder nichts mehr übrig ist
+      while(tried<maxTries&&!full()&&!(usable()>=g.count&&tried-lastGain>120)&&tried-lastGain<250){
+        chk();
+        const c=nextCand(); if(!c) break;
+        if((perArtist[c.artistId]||0)>=g.perArtist) continue;
+        genProgress(`Prüfe Jahre bei Deezer: ${Math.min(g.count,usable())} von ${g.count} Songs beisammen, ${tried} geprüft …`);
+        await resolveOne(c);
+      }
+    }));
+    chk();
+    // 5. Jahre mit MusicBrainz prüfen, mit Rückkopplung: Verschiebt eine Korrektur einen Song in einen
+    //    anderen Abschnitt, wird gezielt für den Abschnitt nachgeprüft, der am weitesten unter seinem Soll liegt.
+    //    Ist der Vorrat eines Abschnitts aufgebraucht, holt das Spiel bei Deezer neue Songs dafür.
+    let mbFixed=0, mbDropped=0, mbFailed=0, checks=0;
+    const ver=new Map(bins.map(b=>[b,[]])), pool=new Map(bins.map(b=>[b,shuffle(b.songs.slice())]));
+    bins.forEach(b=>b.songs=[]);
+    const inBin=(b,y)=>y>=b.lo&&y<=b.hi;
+    async function moreFor(b){
+      for(let n=0;n<30;n++){
+        chk();
+        const ks=Object.keys(groups).filter(k=>groups[k].list.length&&k!=='x'&&b.hi>=+k&&b.lo<=+k+9);
+        const k=ks.length?ks[Math.floor(Math.random()*ks.length)]:(groups.x?.list.length?'x':null);
+        if(k==null) return null;
+        const c=groups[k].list.shift();c.gk=k;
+        if((perArtist[c.artistId]||0)>=g.perArtist) continue;
+        const card=await resolveOne(c);
+        if(!card) continue;
+        const cb=binOf(card.year);cb.songs.splice(cb.songs.indexOf(card),1);
+        if(cb===b) return card;
+        pool.get(cb).push(card);
+      }
+      return null;
+    }
+    if(g.mb){
+      const budget=g.count*3+20, dead=new Set();
+      const vfill=b=>ver.get(b).length/Math.max(1,b.q);
+      const have=()=>bins.reduce((n,b)=>n+Math.min(ver.get(b).length,b.q),0);
+      while(checks<budget){
+        chk();
+        // MusicBrainz nicht erreichbar: nicht für jeden Song erneut warten, Deezer-Jahre nehmen
+        if(mbFailed>=3&&mbFailed>=checks*0.8) break;
+        const needy=bins.filter(b=>b.q>0&&ver.get(b).length<b.q&&!dead.has(b)).sort((a,b)=>vfill(a)-vfill(b));
+        if(!needy.length) break;
+        const b=needy[0];
+        let c=pool.get(b).shift();
+        if(!c){
+          genProgress(`Verteilung ausgleichen: suche bei Deezer weitere Songs für ${b.lo}–${b.hi} …`);
+          c=await moreFor(b);
+          if(!c){dead.add(b);continue}
+        }
+        genProgress(`Prüfe Jahre bei MusicBrainz: ${have()} von ${g.count} Songs passen, ${checks} geprüft${mbFixed?`, ${mbFixed} korrigiert`:''} …`);
+        checks++;
+        const m=await mbInfo(c,all);chk();
+        if(m==null) mbFailed++;
+        else if(mbApply(c,m)) mbFixed++;
+        if(c.year<from||c.year>to){mbDropped++;continue}
+        ver.get(binOf(c.year)).push(c);
+      }
+    }else bins.forEach(b=>{ver.set(b,pool.get(b));pool.set(b,[])});
+    // 6. Zusammenstellen: aus jedem Abschnitt sein Soll, Lücken füllen Abschnitte mit viel Gewicht.
+    //    Erst geprüfte Songs, nur notfalls ungeprüfte.
+    let out=[];
+    bins.forEach(b=>out.push(...ver.get(b).splice(0,b.q)));
+    const fillUp=src=>{
+      const list=[];bins.forEach(b=>src.get(b).forEach(s=>list.push({s,r:b.w*(0.5+Math.random())})));
+      list.sort((a,b)=>b.r-a.r);for(const x of list){if(out.length>=g.count)break;out.push(x.s)}
+    };
+    fillUp(ver);
+    if(out.length<g.count) fillUp(pool);
+    if(out.length<5) throw new Error(`Nur ${out.length} passende Songs gefunden. Deezer lieferte ${cands.length} Songs aus ${lists.length} Listen; bei Deezer geprüft: ${tried}, davon ${outOfRange} außerhalb des Zeitraums, ${noMatch} nicht gefunden${blocked?` und ${blocked} ohne Antwort`:''}. Erweitere den Zeitraum oder wähle ein anderes Genre.`);
+    if(g.mb&&mbFixed) toast(`MusicBrainz hat ${mbFixed} ${mbFixed===1?'Jahr':'Jahre'} korrigiert.`);
+    if(g.mb&&mbFailed>=3&&mbFailed>=out.length/2) toast('MusicBrainz war nicht erreichbar, die Jahre stammen von Deezer.');
+    S.tracks=shuffle(out);S.genreFixed=!all;S.savedName=null;S.baseSource=null;S.source=`${gname||'Genre'} · ${lvl.name} · ${from}–${to}`;S.mode='deezer';g.busy=false;
+    const why=b=>{const k=Object.keys(groups).find(k=>k!=='x'&&b.hi>=+k&&b.lo<=+k+9),gr=k&&groups[k];
+      return gr?` (${gr.lists} Listen, ${gr.cands} Songs, ${gr.tried} geprüft)`:' (keine passende Deezer-Playlist gefunden)'};
+    const empty=bins.filter(b=>b.q>0&&!out.some(s=>s.year>=b.lo&&s.year<=b.hi)).map(b=>(binW===10?`${b.lo}er`:`${b.lo}–${b.hi}`)+why(b));
+    if(out.length<g.count) toast(`Es wurden ${out.length} statt ${g.count} Songs gefunden.${empty.length?` Ohne Songs: ${empty.join(', ')}.`:''}`);
+    else if(empty.length) toast(`Für ${empty.join(', ')} gab es keine passenden Songs.`);
+    go('setup');
+  }catch(e){
+    g.busy=false;
+    if(e.stop){g.genErr=e.message;render();return}
+    if(e.cancel){g.genErr=null;toast('Playlist-Erstellung abgebrochen.');render();return}
+    g.genErr=e.message;
+    render();
+  }
+}
+function genPanel(){
+  const g=S.gen;
+  if(!g.genres&&!g.genErr) loadDzGenres();
+  const opts=g.genres?g.genres.map(x=>`<option value="${esc(x.id)}" ${x.id===g.genre?'selected':''}>${esc(x.name)}</option>`).join(''):'<option>Lade Genres …</option>';
+  return `<section class="panel"><span class="label">Playlist automatisch erstellen</span>
+    <p class="small">Das Spiel sammelt Songs aus Genre-Radios und den beliebtesten Genre-Playlists von Deezer, auch für jedes Jahrzehnt. Live-, Remix- und Karaoke-Fassungen fliegen raus. Die Songs werden über den Zeitraum verteilt und gemischt, gleichmäßig oder nach deiner eigenen Kurve (unter „Erweitert“).</p>
+    <div class="genform">
+      <label><span class="label">Genre</span><select id="genGenre" ${g.genres?'':'disabled'}>${opts}</select></label>
+      <label><span class="label">Bekanntheit</span><select id="genLevel">${DZ_LEVELS.map(l=>`<option value="${l.id}" ${l.id===g.level?'selected':''}>${l.name}${l.min?` (Deezer-Wert ab ${(l.min/1000).toLocaleString('de-DE')} Tsd.)`:''}</option>`).join('')}</select></label>
+      <label><span class="label">Von Jahr</span><input type="number" id="genFrom" min="1900" max="2030" value="${g.from}" inputmode="numeric"></label>
+      <label><span class="label">Bis Jahr</span><input type="number" id="genTo" min="1900" max="2030" value="${g.to}" inputmode="numeric"></label>
+      <label><span class="label">Anzahl Songs</span><input type="number" id="genCount" min="10" max="300" value="${g.count}" inputmode="numeric"></label>
+      <label><span class="label">Höchstens pro Künstler</span><input type="number" id="genPer" min="1" max="10" value="${g.perArtist}" inputmode="numeric"></label>
+    </div>
+    ${distPanel()}
+    <label class="check"><input type="checkbox" id="genMb" ${g.mb?'checked':''}><span>Jahre mit MusicBrainz prüfen: genauer, dauert etwa eine Sekunde pro Song</span></label>
+    ${g.genErr?`<p class="small err">${esc(g.genErr)}</p>`:''}
+    ${g.busy?'<div class="row"><button class="btn-primary" disabled style="flex:1">Erstelle Playlist …</button><button data-act="genCancel">Abbrechen</button></div>'
+      :`<button class="btn-primary" data-act="gen" ${!g.genres?'disabled':''}>Playlist erstellen</button>`}
+    <p class="small muted" id="genProg">${g.busy?'Starte …':'Dauert je nach Anzahl etwa eine halbe bis zwei Minuten.'}</p>
+  </section>`;
+}
+/* ---------- Deezer-Playlist per Link laden ---------- */
+function parseDzPlaylist(s){
+  s=String(s||'').trim();
+  const m=s.match(/playlist\/(\d+)/);
+  return m?m[1]:(/^\d{4,}$/.test(s)?s:null);
+}
+async function loadDeezerPlaylist(){
+  const g=S.gen;
+  if(g.busy) return;
+  const id=parseDzPlaylist(document.getElementById('dzLink')?.value);
+  if(!id){toast('Das ist kein Deezer-Playlist-Link. Er enthält „/playlist/“ und eine Nummer. Kurzlinks wie deezer.page.link öffne vorher im Browser und kopiere die volle Adresse.');return}
+  g.busy=true;g.cancel=false;g.genErr=null;render();
+  const chk=()=>{if(g.cancel){const e=new Error('cancel');e.cancel=true;throw e}};
+  try{
+    genProgress('Lade die Playlist bei Deezer …');
+    const info=await dz(`/playlist/${id}`);chk();
+    const tracks=[];
+    for(let idx=0;tracks.length<500;){
+      const r=await dz(`/playlist/${id}/tracks`,{limit:100,index:idx});chk();
+      const d=r.data||[];tracks.push(...d);
+      if(!r.next||!d.length) break;
+      idx+=d.length;await wait(120);
+    }
+    const seenT=new Set();
+    const cands=tracks.filter(t=>t&&t.title&&t.artist?.name&&t.readable!==false).map(t=>({title:t.title_short||t.title,artist:t.artist.name,artistId:t.artist.id,dzId:t.id,albumId:t.album?.id,img:t.album?.cover_medium||null}))
+      .filter(c=>{const k=norm(c.title)+'|'+norm(c.artist);if(seenT.has(k))return false;seenT.add(k);return true});
+    if(!cands.length) throw new Error('Die Playlist ist leer oder nicht öffentlich.');
+    const total=cands.length, out=[];let done=0;
+    await Promise.all([0,1,2].map(async()=>{
+      while(cands.length){
+        chk();
+        const c=cands.shift();
+        const res=await deezerResolve(c);done++;
+        genProgress(`Bestimme Jahre bei Deezer: ${done} von ${total} Songs …`);
+        if(res.card) out.push(res.card);
+      }
+    }));
+    let fixed=0;
+    if(g.mb){
+      for(let i=0;i<out.length;i++){
+        chk();
+        genProgress(`Prüfe Jahre bei MusicBrainz: ${i} von ${out.length} Songs${fixed?`, ${fixed} korrigiert`:''} …`);
+        const m=await mbInfo(out[i],true);
+        if(mbApply(out[i],m)) fixed++;
+        if(m==null&&i>=2&&!out.slice(0,i+1).some(c=>c.mbOk)) break;
+      }
+    }
+    if(out.length<5) throw new Error(`Nur ${out.length} Songs dieser Playlist ließen sich einem Jahr zuordnen. Für ein Spiel braucht es mindestens 5.`);
+    S.tracks=shuffle(out);S.genreFixed=false;S.savedName=null;S.baseSource=null;S.source=`${info.title||'Deezer-Playlist'} · Deezer-Playlist`;S.mode='deezer';g.busy=false;
+    if(fixed) toast(`MusicBrainz hat ${fixed} ${fixed===1?'Jahr':'Jahre'} korrigiert.`);
+    go('setup');
+  }catch(e){
+    g.busy=false;
+    if(e.cancel){toast('Laden abgebrochen.');render();return}
+    g.genErr=/no data|not found|invalid/i.test(e.message)?'Diese Playlist gibt es nicht oder sie ist privat.':e.message;
+    render();
+  }
+}
+
+/* ---------- Hilfen für Deezer-Abfragen und Ausschnitte ---------- */
+let jsonpN=0;
+function jsonp(url){
+  return new Promise((res,rej)=>{
+    const cb='zsJsonp'+(++jsonpN), s=document.createElement('script');
+    const done=()=>{clearTimeout(t);delete window[cb];s.remove()};
+    const t=setTimeout(()=>{done();rej(new Error('Zeitüberschreitung'))},8000);
+    window[cb]=d=>{done();res(d)};
+    s.onerror=()=>{done();rej(new Error('Netzwerkfehler'))};
+    s.src=url+'&callback='+cb;document.head.appendChild(s);
+  });
+}
+const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+// Ergebnisse werden im Browser gemerkt, damit iTunes nicht bei jedem Spiel neu gefragt wird
+const lkKey = c => 'lk_'+norm(c.artist+' '+c.title).slice(0,80);
+const wait = ms => new Promise(r=>setTimeout(r,ms));
+async function itunes(term){
+  for(let attempt=0;attempt<2;attempt++){
+    try{return await jsonp('https://itunes.apple.com/search?'+new URLSearchParams({term,media:'music',entity:'song',limit:'15',country:'DE'}))}
+    catch(e){if(attempt===0) await wait(2500); else throw e}
+  }
+}
+function lookup(card){
+  if(card.dzId){
+    if(card.lkP&&Date.now()-(card.lkAt||0)<10*60e3) return card.lkP;
+    card.lkAt=Date.now();
+    card.lkP=dz(`/track/${card.dzId}`).then(t=>{card.lk=t&&t.preview?{preview:t.preview,genre:card.genre||null}:null;return card.lk})
+      .catch(()=>{card.lk=undefined;card.lkP=null;return null});
+    return card.lkP;
+  }
+  if(card.lkP) return card.lkP;
+  const cached=LS.get(lkKey(card),undefined);
+  if(cached!==undefined){card.lk=cached;card.lkP=Promise.resolve(cached);return card.lkP}
+  card.lkP=(async()=>{
+    const title=card.title.split(' - ')[0].replace(/\s*[\(\[].*?[\)\]]/g,'').trim();
+    const artist=card.artist.split(/,| ft\.| feat\.| & /)[0].trim();
+    const a=norm(artist), t=norm(title);
+    const artOk=r=>{const n=norm(r.artistName);return n.includes(a)||a.includes(n)};
+    const titOk=r=>{const n=norm(r.trackName);return n.startsWith(t)||t.startsWith(n)};
+    try{
+      let rs=((await itunes(artist+' '+title)).results||[]).filter(r=>r.previewUrl);
+      let best=rs.find(r=>artOk(r)&&titOk(r))||rs.find(titOk)||rs.find(artOk);
+      if(!best){
+        rs=((await itunes(title)).results||[]).filter(r=>r.previewUrl);
+        best=rs.find(r=>artOk(r)&&titOk(r))||rs.find(artOk);
+      }
+      card.lk=best?{preview:best.previewUrl,genre:best.primaryGenreName}:null;
+      LS.set(lkKey(card),card.lk);
+    }catch{
+      card.lk=undefined;card.lkP=null; // Netzwerkfehler: später erneut versuchen
+      return null;
+    }
+    return card.lk;
+  })();
+  return card.lkP;
+}
+function bucket(g){
+  if(!g) return null; const s=g.toLowerCase();
+  if(/hip-hop|hip hop|rap/.test(s)) return 'Hip-Hop';
+  if(/r&b|soul|funk/.test(s)) return 'Soul & R&B';
+  if(/dance|electro|elektron|house|techno|disco/.test(s)) return 'Dance & Elektro';
+  if(/schlager|deutsch|volksm/.test(s)) return 'Deutsch';
+  if(/alternative|indie/.test(s)) return 'Indie & Alternative';
+  if(/metal/.test(s)) return 'Metal';
+  if(/rock|punk/.test(s)) return 'Rock';
+  if(/pop|singer/.test(s)) return 'Pop';
+  if(/reggae/.test(s)) return 'Reggae';
+  if(/jazz|blues/.test(s)) return 'Jazz & Blues';
+  if(/country|folk/.test(s)) return 'Country & Folk';
+  if(/soundtrack|film|games|jeux/.test(s)) return 'Soundtrack';
+  if(/klassik|classical|classique/.test(s)) return 'Klassik';
+  return g;
+}
+const cardGenre = c => c.genre || bucket(c.lk?.genre);
+// Im Hintergrund die nächsten Songs im Stapel nachschlagen (langsam, damit iTunes nicht blockt)
+setInterval(()=>{
+  if(S.screen!=='game') return;
+  for(let i=S.deck.length-1;i>=Math.max(0,S.deck.length-15);i--){const c=S.deck[i];if(!c.lkP){lookup(c);break}}
+},5000);
+
+/* ---------- Ausschnitt-Wiedergabe (normal, Turbo, rückwärts) ---------- */
+const audioEl=new Audio(); audioEl.preload='auto';
+audioEl.addEventListener('ended',()=>{if(S.audioKind==='el'){S.playing=false;updateDisc()}});
+const SILENT=(()=>{const n=400,b=new ArrayBuffer(44+n),v=new DataView(b),w=(o,s)=>[...s].forEach((c,i)=>v.setUint8(o+i,c.charCodeAt(0)));
+  w(0,'RIFF');v.setUint32(4,36+n,true);w(8,'WAVE');w(12,'fmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);
+  v.setUint32(24,8000,true);v.setUint32(28,8000,true);v.setUint16(32,1,true);v.setUint16(34,8,true);w(36,'data');v.setUint32(40,n,true);
+  for(let i=0;i<n;i++)v.setUint8(44+i,128);return URL.createObjectURL(new Blob([b],{type:'audio/wav'}))})();
+// Muss direkt im Klick laufen, damit Handys später Ton erlauben
+function unlockAudio(){
+  try{if(!S.ctx)S.ctx=new (window.AudioContext||window.webkitAudioContext)();S.ctx.resume()}catch{}
+  if(S.audioKind!=='el'){audioEl.src=SILENT;audioEl.play().catch(()=>{})}
+}
+function setRate(r){
+  audioEl.defaultPlaybackRate=r;audioEl.playbackRate=r;
+  const keep=r===1; audioEl.preservesPitch=keep; audioEl.mozPreservesPitch=keep; audioEl.webkitPreservesPitch=keep;
+}
+// Sabotage „Kurzer Ausschnitt“: 10 Sekunden ab einer zufälligen Stelle, nur vor dem Einordnen
+const SNIP_MS=10000;
+let snipTimer=null;
+function clearSnip(){clearTimeout(snipTimer);snipTimer=null}
+function snipActive(){return !!(S.turnFx&&S.turnFx.snippet&&S.phase==='guess')}
+function armSnip(stop){clearSnip();snipTimer=setTimeout(()=>{snipTimer=null;stop()},SNIP_MS)}
+function elStopSnip(){audioEl.pause();S.playing=false;updateDisc()}
+async function elPlay(url,rate,startSec=0){
+  S.audioKind='el';audioEl.src=url;setRate(rate);
+  try{
+    await audioEl.play();setRate(rate);
+    if(startSec) audioEl.currentTime=startSec;
+    S.playing=true;S.started=true;
+    markStart(url,rate,false,startSec||0);
+    if(snipActive()) armSnip(elStopSnip);
+  }catch{S.playing=false}
+  // Knöpfe „Pause“ und „Von vorn“ erst jetzt zeigen, wo der Ausschnitt läuft
+  updateStage();
+}
+async function revLoad(url){
+  const r=await fetch(url);if(!r.ok) throw new Error('fetch');
+  const ab=await S.ctx.decodeAudioData(await r.arrayBuffer());
+  for(let c=0;c<ab.numberOfChannels;c++) ab.getChannelData(c).reverse();
+  S.revBuf=ab;
+}
+function revStart(){
+  revStop();clearSnip();
+  const src=S.ctx.createBufferSource();src.buffer=S.revBuf;src.connect(S.ctx.destination);
+  // Turbo und Rückwärts zusammen: rückwärts und schneller
+  const rate=S.phase==='guess'?(S.revRate||1):1;src.playbackRate.value=rate;
+  src.onended=()=>{if(S.revSrc===src){S.playing=false;updateDisc()}};
+  S.ctx.resume();
+  if(snipActive()) src.start(0,S.revOff||0,SNIP_MS/1000*rate); else src.start(0,S.revOff||0);
+  S.revSrc=src;S.audioKind='rev';S.playing=true;S.started=true;markStart(S.revUrl,rate,true,S.revOff||0);updateDisc();
+}
+function revStop(){if(S.revSrc){const s=S.revSrc;S.revSrc=null;try{s.stop()}catch{}}}
+// Was gerade läuft, damit Mitspieler es auf ihrem Gerät mitspielen können
+S.aSeq=0;S.aInfo=null;
+function markStart(url,rate,rev,off){S.aSeq++;S.aInfo={url,rate,rev:!!rev,off:off||0}}
+function stopAudio(){
+  clearSnip();audioEl.pause();revStop();
+  S.audioKind=null;S.playing=false;
+}
+function refund(sab){if(!sab)return;const p=S.players[sab.by];if(p)p.jp+=JOKERS[sab.type].cost}
+async function startAudio(){
+  const m=S.mystery, fx=S.turnFx;
+  const snip=!!fx.snippet;
+  S.spStart=0;S.elStart=0;S.revOff=0;S.revRate=1;
+  if(snip) S.spStart=m.dur>SNIP_MS*3?Math.floor(m.dur*0.1+Math.random()*(m.dur*0.8-SNIP_MS)):30000+Math.floor(Math.random()*60000);
+  {
+    S.audioKind='loading';updateStage();
+    const lk=await lookup(m);
+    if(S.mystery!==m) return;
+    if(!lk?.preview){
+      // Kein Ausschnitt: automatisch weiterziehen, bis ein Song mit Ausschnitt kommt
+      S.misses=(S.misses||0)+1;
+      if(S.misses<=12&&S.deck.length){const p=S.players[S.cur];p.fx={...S.turnFx,...p.fx};nextTurn(true);return}
+      S.misses=0;S.audioKind=null;S.noAudio=true;render();return;
+    }
+    S.misses=0;
+    if(!lk?.preview){
+      for(const k of ['turbo','reverse']) if(fx[k]){refund(fx[k]);toast(`Für diesen Song gibt es keinen Ausschnitt. ${JOKERS[k].name} verfällt, ${S.players[fx[k].by].name} bekommt die Jokerpunkte zurück.`);delete fx[k]}
+      S.audioKind=null;S.noAudio=true;render();return;
+    }
+    const rate=fx.turbo?1.8:1;
+    if(fx.reverse){
+      try{
+        await revLoad(lk.preview);if(S.mystery!==m)return;S.revUrl=lk.preview;
+        S.revRate=rate;
+        if(snip) S.revOff=Math.random()*Math.max(0,S.revBuf.duration-SNIP_MS/1000*rate);
+        revStart();render();return;
+      }catch{
+        if(fx.turbo){refund(fx.reverse);toast(`Rückwärts klappt bei diesem Song nicht. ${S.players[fx.reverse.by].name} bekommt die Jokerpunkte zurück.`);delete fx.reverse}
+        else{toast('Rückwärts klappt bei diesem Song nicht, er läuft stattdessen im Turbo.');fx.turbo=fx.reverse;delete fx.reverse}
+      }
+    }
+    const r2=fx.turbo?1.8:1;
+    if(snip) S.elStart=Math.random()*Math.max(0,28-SNIP_MS/1000*r2);
+    await elPlay(lk.preview,r2,S.elStart);
+    return;
+  }
+  S.audioKind=null;S.noAudio=true;render();
+}
+// Nach dem Einordnen: Song normal abspielen (ohne Turbo, Rückwärts oder Ausschnitt)
+function playNormal(){
+  clearSnip();audioEl.pause();revStop();S.playing=false;
+  S.spStart=0;S.elStart=0;S.revOff=0;
+  const pv=S.mystery?.lk?.preview;
+  if(pv) elPlay(pv,1,0); else {S.audioKind=null;updateStage()}
+}
+function pauseAudio(){
+  clearSnip();
+  if(S.audioKind==='el'){audioEl.pause();S.playing=false}
+  if(S.audioKind==='rev'){S.ctx.suspend();S.playing=false}
+  updateDisc();
+}
+function togglePlay(){
+  if(S.playing) return pauseAudio();
+  // Beim Ausschnitt startet „Abspielen“ immer wieder die 10 Sekunden
+  if(snipActive()) return replay();
+  if(S.audioKind==='el'){audioEl.play().catch(()=>{});S.playing=true}
+  if(S.audioKind==='rev'){if(S.revSrc){S.ctx.resume();S.playing=true}else revStart()}
+  updateDisc();
+}
+function replay(){
+  clearSnip();
+  if(S.audioKind==='el'){
+    audioEl.currentTime=S.elStart||0;audioEl.play().catch(()=>{});S.playing=true;markStart(audioEl.src,audioEl.playbackRate,false,S.elStart||0);
+    if(snipActive()) armSnip(elStopSnip);
+    updateDisc();
+  }
+  if(S.audioKind==='rev') revStart();
+}
+function updateDisc(){
+  const d=document.querySelector('.disc');if(d)d.classList.toggle('spin',S.playing);
+  const b=document.getElementById('btnToggle');if(b)b.textContent=S.playing?'Pause':'Abspielen';
+  publish();
+}
+function updateStage(){if(S.screen==='game'&&S.phase!=='shop')render()}
+
+/* ---------- Spiellogik ---------- */
+function startGame(){
+  const ros=S.roster.map(r=>({...r,name:String(r.name||'').trim()})).filter(r=>r.name);
+  if(!ros.length){toast('Mindestens ein Spieler wird gebraucht.');return}
+  let pool=shuffle(S.tracks);
+  if(pool.length<4){toast('Zu wenige Songs.');return}
+  LS.set('names',ros.filter(r=>!r.guest).map(r=>r.name));LS.set('target',S.target);LS.set('roundSongs',S.roundSongs);if(S.deviceId)LS.set('deviceId',S.deviceId);
+  const ys=S.tracks.map(t=>t.year);S.minY=Math.min(...ys);S.maxY=Math.max(...ys);
+  S.players=ros.map(r=>({name:r.name,score:0,jp:0,fx:{},guest:r.guest||null}));
+  S.timeline=[{...pool.pop(),by:null}];
+  if(S.goal==='all'){
+    // Alle bekommen gleich viele Songs
+    const n=S.players.length, want=Math.min(pool.length,S.roundSongs);
+    pool=pool.slice(0,Math.max(n,Math.floor(want/n)*n));
+  }
+  S.deck=pool;S.cur=0;S.screen='game';S.showInvite=false;S.bonusIn={artist:'',title:''};
+  if(typeof keepAwake==='function') keepAwake();
+  nextTurn();
+}
+function nextTurn(searching){
+  stopAudio();
+  while(S.deck.length>1&&S.deck[S.deck.length-1].lk===null) S.deck.pop();
+  if(!S.deck.length){finish();return}
+  const p=S.players[S.cur], fx=p.fx; p.fx={}; S.turnFx=fx;
+  if(fx.genre){
+    let i=-1;for(let k=S.deck.length-1;k>=0;k--){if(cardGenre(S.deck[k])===fx.genre){i=k;break}}
+    if(i>=0){const [c]=S.deck.splice(i,1);S.deck.push(c)}
+    else{p.jp+=JOKERS.genre.cost;toast(`Kein ${fx.genre}-Song mehr im Stapel. ${p.name} bekommt die Jokerpunkte zurück.`);delete fx.genre}
+  }
+  S.mystery=S.deck.pop();S.slot=null;S.phase='guess';S.result=null;S.started=false;S.noAudio=false;S.jpPop=null;S.playErr=null;
+  if(!searching) S.misses=0;
+  render();if(!searching)window.scrollTo(0,0);
+  startAudio();
+}
+// Zeitstrahl für den aktuellen Zug: mit „Falsche ausblenden“ ohne die falsch eingeordneten Songs
+function curTl(){return S.screen==='game'&&S.phase!=='shop'&&S.turnFx&&S.turnFx.hideWrong?S.timeline.filter(c=>!c.wrong):S.timeline}
+// Karte zwischen view[i-1] und view[i] in den vollen Zeitstrahl legen
+function insertAt(full,card,view,i){
+  const a=i>0?full.indexOf(view[i-1])+1:0, b=i<view.length?full.indexOf(view[i]):full.length;
+  let k=a; while(k<b&&full[k].year<=card.year) k++;
+  full.splice(k,0,card);
+}
+function place(){
+  if(S.slot==null) return;
+  const p=S.players[S.cur], full=S.timeline, tl=curTl(), m=S.mystery, y=m.year, i=S.slot, fx=S.turnFx;
+  const lo=i>0?tl[i-1].year:-Infinity, hi=i<tl.length?tl[i].year:Infinity;
+  const bonus=S.bonus?scoreBonus(m,S.bonusIn):null;
+  const bpts=bonus?(bonus.artist?1:0)+(bonus.title?1:0):0;
+  if(lo<=y&&y<=hi){
+    const pts=fx.double?2:1;
+    insertAt(full,{...m,by:S.cur},tl,i);
+    p.score+=pts+bpts;S.result={ok:true,index:i,pts,bonus};
+  }else{
+    let c=tl.findIndex(x=>x.year>y);if(c<0)c=tl.length;
+    if(!S.noJokers){p.jp+=1;S.jpPop=S.cur}
+    p.score+=bpts;
+    S.result={ok:false,index:c,chosen:i,kept:!!S.keepWrong&&!fx.hideWrong,keptMsg:!!S.keepWrong,bonus,noJp:!!S.noJokers};
+    // Option: trotzdem an die richtige Stelle legen, aber ohne Punkt
+    if(S.keepWrong){let k=full.findIndex(x=>x.year>y);if(k<0)k=full.length;full.splice(k,0,{...m,by:S.cur,wrong:true})}
+  }
+  S.bonusIn={artist:'',title:''};
+  S.phase='reveal';render();
+  // Nach dem Raten läuft der Song normal, auch wenn er sabotiert war
+  if(fx.turbo||fx.reverse||fx.snippet) playNormal();
+}
+/* Bonuspunkte: Interpret und Titel vergleichen, kleine Tippfehler sind erlaubt */
+function lev(a,b){
+  const d=Array.from({length:b.length+1},(_,j)=>j);
+  for(let i=1;i<=a.length;i++){let prev=d[0];d[0]=i;
+    for(let j=1;j<=b.length;j++){const t=d[j];d[j]=Math.min(d[j]+1,d[j-1]+1,prev+(a[i-1]===b[j-1]?0:1));prev=t}}
+  return d[b.length];
+}
+function similar(a,b){
+  a=norm(a).replace(/^the /,'');b=norm(b).replace(/^the /,'');
+  if(!a||!b) return false;
+  if(a===b) return true;
+  if(Math.min(a.length,b.length)>=4&&(a.includes(b)||b.includes(a))) return Math.min(a.length,b.length)/Math.max(a.length,b.length)>=0.5;
+  return lev(a,b)<=Math.max(1,Math.floor(Math.max(a.length,b.length)*0.2));
+}
+const cleanTitle=t=>String(t).split(' - ')[0].replace(/\s*[\(\[].*?[\)\]]/g,'').trim();
+function scoreBonus(m,inp){
+  const a=String(inp.artist||'').trim(), t=String(inp.title||'').trim();
+  const artists=String(m.artist).split(/,|&| feat\.? | ft\.? | x | und | and /i).map(s=>s.trim()).filter(Boolean);
+  return {artistTry:!!a,titleTry:!!t,
+    artist:!!a&&(similar(a,m.artist)||artists.some(x=>similar(a,x))),
+    title:!!t&&similar(t,cleanTitle(m.title))};
+}
+function next(){
+  if((S.goal!=='all'&&S.players[S.cur].score>=S.target)||!S.deck.length){finish();return}
+  S.cur=(S.cur+1)%S.players.length;
+  if(!S.noJokers&&S.players.some(q=>q.jp>0)){
+    stopAudio();
+    const nextP=S.cur, buyer=S.players[nextP].jp>0?nextP:S.players.findIndex(q=>q.jp>0);
+    S.shop={buyer,target:S.players.length>1?(buyer===nextP?(nextP+1)%S.players.length:nextP):null,genre:{}};
+    S.phase='shop';render();window.scrollTo(0,0);
+  }else nextTurn();
+}
+// Joker kaufen; bi = wer zahlt, ti = Ziel einer Sabotage
+function buyFor(bi,type,ti){
+  const b=S.players[bi], J=JOKERS[type]; if(!b||!J) return;
+  if(J.needs&&!S[J.needs]) return;
+  if(b.jp<J.cost){toast(`${b.name} hat nicht genug Jokerpunkte.`);return}
+  if(J.kind==='help'){ if(b.fx[type]) return; b.fx[type]=true; }
+  else{
+    // Sabotagen lassen sich kombinieren, nur dieselbe nicht doppelt
+    const t=S.players[ti]; if(!t||ti===bi) return;
+    if(t.fx[type]){toast(`${t.name} bekommt das schon.`);return}
+    t.fx[type]={by:bi,type};
+  }
+  b.jp-=J.cost;
+}
+// by = wer zurücknehmen will (null = Host darf alles)
+function undoFx(pi,type,by){
+  const p=S.players[pi], v=p&&p.fx[type]; if(!v||!JOKERS[type]) return;
+  const payer=JOKERS[type].kind==='sab'?v.by:pi;
+  if(by!=null&&by!==payer) return;
+  S.players[payer].jp+=JOKERS[type].cost;delete p.fx[type];
+}
+// Genre eines Songs: vom Deezer-Album (bei fremden Songs über die Deezer-Suche nach Interpret und Titel)
+async function fetchGenre(c){
+  if(cardGenre(c)) return cardGenre(c);
+  if(c.genreTried) return null;
+  c.genreTried=true;
+  try{
+    let albumId=null;
+    if(c.dzId){await dzPace();const t=await dz(`/track/${c.dzId}`);albumId=t?.album?.id}
+    else{
+      await dzPace();
+      const r=await dz('/search/track',{q:`artist:"${String(c.artist).split(',')[0]}" track:"${cleanTitle(c.title)}"`,limit:5});
+      const hit=(r.data||[]).find(x=>similar(cleanTitle(x.title_short||x.title),cleanTitle(c.title)));
+      albumId=hit?.album?.id;
+    }
+    if(albumId){const al=await dzAlbum(albumId);const n=al?.genres?.data?.[0]?.name;if(n)c.genre=bucket(n)}
+  }catch{}
+  return cardGenre(c);
+}
+async function openGenresFor(bi){
+  const sh=S.shop;if(!sh||!S.players[bi])return;
+  sh.genre[bi]='loading';render();
+  // die nächsten 20 Songs im Stapel nachschlagen, zu zweit parallel
+  const todo=[];for(let k=S.deck.length-1;k>=0&&todo.length<20;k--){if(!cardGenre(S.deck[k])&&!S.deck[k].genreTried)todo.push(S.deck[k])}
+  await Promise.all([0,1].map(async()=>{while(todo.length){const c=todo.shift();await fetchGenre(c);if(S.shop!==sh)return}}));
+  if(S.shop!==sh) return;
+  const counts={};for(const c of S.deck){const g=cardGenre(c);if(g)counts[g]=(counts[g]||0)+1}
+  sh.genre[bi]=Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+  render();
+}
+function pickGenreFor(bi,g){
+  const b=S.players[bi];
+  if(!b||b.jp<JOKERS.genre.cost||b.fx.genre) return;
+  b.fx.genre=g;b.jp-=JOKERS.genre.cost;delete S.shop.genre[bi];
+}
+function skipSong(){
+  const p=S.players[S.cur]; p.fx={...S.turnFx,...p.fx}; nextTurn();
+}
+function finish(){stopAudio();S.screen='end';render();window.scrollTo(0,0)}
+
+/* ---------- Raum für Mitspieler (Handys verbinden sich direkt über WebRTC) ---------- */
+// PeerJS vermittelt nur den Verbindungsaufbau; danach laufen Spielstand und Eingaben direkt zwischen den Handys.
+let peerLib=null;
+function loadPeerLib(){
+  if(!peerLib) peerLib=new Promise(res=>{const s=document.createElement('script');s.src=PEERJS;s.onload=()=>res(window.Peer||null);s.onerror=()=>res(null);document.head.appendChild(s)});
+  return peerLib;
+}
+const NET={peer:null,id:null,status:'off',error:null,conns:new Map(),secrets:{}};
+function roomCode(){const a='abcdefghjkmnpqrstuvwxyz23456789';let c='';const r=randBytes(6);for(const b of r)c+=a[b%a.length];return c}
+async function startRoom(){
+  if(NET.status==='starting'||NET.status==='ready') return;
+  NET.status='starting';NET.error=null;
+  const P=await loadPeerLib();
+  if(!P){NET.status='error';NET.error='Die Verbindungsbibliothek ließ sich nicht laden. Prüfe die Internetverbindung.';render();return}
+  let id=null;try{id=sessionStorage.getItem('zs_room')}catch{}
+  if(!id) id='zeitstrahl-'+roomCode();
+  const peer=new P(id,{debug:0});
+  NET.peer=peer;
+  peer.on('open',pid=>{NET.id=pid;NET.status='ready';S.hosted=true;try{sessionStorage.setItem('zs_room',pid)}catch{}render()});
+  peer.on('connection',conn=>{
+    conn.on('open',()=>{NET.conns.set(conn.peer,{conn,guest:null});sendState(conn)});
+    conn.on('data',d=>{try{onGuestData(conn,d)}catch(e){console.error(e)}});
+    const drop=()=>NET.conns.delete(conn.peer);
+    conn.on('close',drop);conn.on('error',drop);
+  });
+  peer.on('disconnected',()=>{try{peer.reconnect()}catch{}});
+  peer.on('error',e=>{
+    if(e.type==='unavailable-id'){try{sessionStorage.removeItem('zs_room')}catch{}peer.destroy();NET.status='off';setTimeout(startRoom,500);return}
+    if(['network','server-error','socket-error','socket-closed','browser-incompatible'].includes(e.type)&&NET.status!=='ready'){
+      NET.status='error';NET.error=e.type==='browser-incompatible'?'Dieser Browser unterstützt keine direkten Verbindungen.':'Keine Verbindung zum Vermittlungsdienst. Prüfe die Internetverbindung.';render();
+    }
+  });
+}
+function retryRoom(){if(NET.peer){try{NET.peer.destroy()}catch{}}NET.status='off';startRoom();render()}
+function sendState(conn){try{if(conn.open)conn.send({kind:'state',state:publicState()})}catch{}}
+function onGuestData(conn,d){
+  if(!d||typeof d!=='object'||typeof d.type!=='string') return;
+  const e=NET.conns.get(conn.peer)||{conn,guest:null};NET.conns.set(conn.peer,e);
+  const idOk=typeof d.id==='string'&&/^[a-z0-9]{6,32}$/.test(d.id)&&typeof d.secret==='string'&&d.secret.length>=8;
+  if(d.type==='hello'||d.type==='join'){
+    if(!idOk) return;
+    const known=NET.secrets[d.id];
+    if(known&&known!==d.secret){conn.send({kind:'error',msg:'Dieser Spieler ist schon mit einem anderen Gerät verbunden.'});return}
+    if(d.type==='hello'){if(known)e.guest=d.id;sendState(conn);return}
+    const name=String(d.name||'').trim().slice(0,20);
+    if(!name) return;
+    NET.secrets[d.id]=d.secret;e.guest=d.id;
+    handleGuest({type:'join',id:d.id,name});
+    conn.send({kind:'joined'});sendState(conn);
+    return;
+  }
+  if(!e.guest) return;
+  handleGuest({...d,id:e.guest});
+}
+let pubTimer=null;
+function publish(){
+  if(!NET.conns.size) return;
+  clearTimeout(pubTimer);
+  pubTimer=setTimeout(()=>{const msg={kind:'state',state:publicState()};for(const {conn} of NET.conns.values()){try{if(conn.open)conn.send(msg)}catch{}}},60);
+}
+// Bildschirm anlassen, solange der Host spielt: sonst reißen die Verbindungen ab
+let wakeLock=null;
+async function keepAwake(){
+  try{if(navigator.wakeLock&&!wakeLock){wakeLock=await navigator.wakeLock.request('screen');wakeLock.addEventListener('release',()=>{wakeLock=null})}}catch{}
+}
+document.addEventListener('visibilitychange',()=>{if(!GUEST&&document.visibilityState==='visible'&&S.screen==='game')keepAwake()});
+function pubFx(fx,m){
+  const o={};if(!fx)return o;
+  if(fx.double)o.double=true;
+  if(fx.decade)o.decade=m?decadeName(m.year):true;
+  if(fx.genre)o.genre=fx.genre;
+  if(fx.turbo)o.turbo={by:fx.turbo.by};
+  if(fx.reverse)o.reverse={by:fx.reverse.by};
+  if(fx.snippet)o.snippet={by:fx.snippet.by};
+  if(fx.hideWrong)o.hideWrong=true;
+  return o;
+}
+// Was die Handys sehen dürfen: der Song bleibt bis zur Auflösung geheim
+function publicState(){
+  const st={screen:S.screen,target:S.target,genreFixed:!!S.genreFixed,source:S.source,minY:S.minY,maxY:S.maxY,goal:S.goal,noJokers:!!S.noJokers,keepWrong:!!S.keepWrong,bonus:!!S.bonus};
+  if(S.screen!=='game'&&S.screen!=='end'){st.lobby=S.roster.map(r=>({name:r.name,guest:r.guest||null}));return st}
+  st.players=S.players.map(p=>({name:p.name,score:p.score,jp:p.jp,guest:p.guest,fx:pubFx(p.fx)}));
+  st.timeline=(S.screen==='game'?curTl():S.timeline).map(c=>({year:c.year,title:c.title,artist:c.artist,by:c.by,wrong:!!c.wrong}));
+  st.cur=S.cur;st.phase=S.phase;st.deck=S.deck.length;st.jpPop=S.jpPop;
+  if(S.screen==='game'){
+    const m=S.mystery;
+    st.turnFx=pubFx(S.turnFx,m);
+    st.mystery=S.phase==='reveal'&&m?{title:m.title,artist:m.artist,year:m.year,img:m.img||null}:null;
+    st.result=S.result;
+    const ai=['el','rev'].includes(S.audioKind)&&S.aInfo?S.aInfo:null;
+    st.audio={kind:S.audioKind,playing:S.playing,noAudio:S.noAudio,searching:!!S.misses,seq:S.aSeq,url:ai?.url||null,rate:ai?.rate||1,rev:!!ai?.rev,off:ai?.off||0,snip:snipActive()?SNIP_MS:0};
+    if(S.phase==='shop') st.genre=S.shop.genre;
+  }
+  return st;
+}
+function handleGuest(a){
+  if(a.type==='join'){
+    const name=String(a.name||'').slice(0,20);
+    const r=S.roster.find(x=>x.guest===a.id);
+    if(r) r.name=name; else S.roster.push({name,guest:a.id});
+    if(S.screen==='game'){
+      const p=S.players.find(x=>x.guest===a.id);
+      if(p) p.name=name; else {S.players.push({name,score:0,jp:0,fx:{},guest:a.id});toast(`${name} spielt jetzt mit.`)}
+    }else if(!r) toast(`${name} ist beigetreten.`);
+    render();return;
+  }
+  if(S.screen!=='game') return;
+  const pi=S.players.findIndex(p=>p.guest===a.id); if(pi<0) return;
+  const mine=pi===S.cur, tl=curTl();
+  switch(a.type){
+    case 'place':
+      if(mine&&S.phase==='guess'&&a.tlLen===tl.length&&Number.isInteger(a.slot)&&a.slot>=0&&a.slot<=tl.length){
+        S.bonusIn={artist:String(a.artist||'').slice(0,100),title:String(a.title||'').slice(0,100)};
+        S.slot=a.slot;place();
+      }
+      break;
+    case 'next': if(mine&&S.phase==='reveal') next(); break;
+    case 'go': if(mine&&S.phase==='shop') nextTurn(); break;
+    case 'buy': if(S.phase==='shop'&&a.joker!=='genre'&&!(a.joker==='genre'&&S.genreFixed)){buyFor(pi,a.joker,+a.target);render()} break;
+    case 'genreOpen': if(S.phase==='shop'&&!S.genreFixed) openGenresFor(pi); break;
+    case 'genreClose': if(S.phase==='shop'){delete S.shop.genre[pi];render()} break;
+    case 'genre': if(S.phase==='shop'){pickGenreFor(pi,String(a.genre));render()} break;
+    case 'undo': if(S.phase==='shop'){undoFx(+a.pi,a.joker,pi);render()} break;
+    case 'toggle': if(mine&&S.phase!=='shop') togglePlay(); break;
+    case 'replay': if(mine&&S.phase!=='shop') replay(); break;
+    case 'skip': if(mine&&S.phase==='guess'&&S.noAudio) skipSong(); break;
+  }
+}
+let qrLib=null;
+function loadQr(){
+  if(!qrLib) qrLib=new Promise(res=>{const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';s.onload=()=>res(window.QRCode||null);s.onerror=()=>res(null);document.head.appendChild(s)});
+  return qrLib;
+}
+function drawQr(){
+  const els=[...document.querySelectorAll('[data-qr]')];if(!els.length)return;
+  loadQr().then(Q=>els.forEach(el=>{
+    if(!el.isConnected||el.dataset.done)return;
+    if(!Q){el.remove();return}
+    el.dataset.done='1';
+    new Q(el,{text:el.dataset.qr,width:176,height:176,colorDark:'#111111',colorLight:'#ffffff',correctLevel:Q.CorrectLevel.M});
+  }));
+}
+function linkBox(url){
+  return `<div class="qr" data-qr="${esc(url)}" aria-hidden="true"></div>
+    <div class="copyrow"><code>${esc(url)}</code><button data-copy="${esc(url)}">Kopieren</button></div>`;
+}
+function inviteHtml(){
+  // In der App öffnet der QR-Code direkt die Timetracker-App der Mitspieler
+  const url=NET.id?(IN_APP?`zeitstrahl://join?c=${NET.id}`:`${location.origin}${location.pathname}?join=${NET.id}`):'';
+  let body;
+  if(NET.status==='ready') body=IN_APP
+    ?`<div class="roomcode">${esc(NET.id.replace('zeitstrahl-',''))}</div>
+      <div class="qr" data-qr="${esc(url)}" aria-hidden="true"></div>
+      <p class="small muted">Mitspieler öffnen die Timetracker-App und geben unter „Bei jemandem mitspielen“ diesen Raumcode ein. Oder sie scannen den QR-Code mit der Handykamera, dann öffnet sich die App direkt.</p>`
+    :`${linkBox(url)}<p class="small muted">Raumcode: <b>${esc(NET.id.replace('zeitstrahl-',''))}</b>. Wer die Seite schon offen hat, kann ihn im Startmenü eingeben.</p>`;
+  // App: zusätzlich ein Link für Mitspieler ohne App (iPhone, PC), über die eigene Timetracker-Seite im Netz
+  if(IN_APP&&NET.status==='ready'){
+    const wb=LS.get('webBase','');
+    body+=`<span class="label" style="display:block;margin-top:14px">Für iPhone und Browser</span>`+(wb
+      ?`${linkBox(wb+'?join='+NET.id)}<p class="small muted">Mitspieler ohne App öffnen diesen Link im Browser, zum Beispiel in Safari, und spielen dort mit. <a href="#" data-act="webBaseEdit">Adresse ändern</a></p>`
+      :`<p class="small">Trag einmal die Adresse deiner Timetracker-Seite ein, zum Beispiel <code>https://deinname.github.io/timetracker/</code>. Dann gibt es hier zusätzlich einen Link für Mitspieler ohne App.</p>
+        <div class="copyrow"><input type="url" id="webBase" value="${esc(S.webDraft||'')}" placeholder="https://deinname.github.io/timetracker/" autocomplete="off" spellcheck="false"><button data-act="webBaseSave">Speichern</button></div>`);
+  }
+  else if(NET.status==='error') body=`<p class="small err">${esc(NET.error)}</p><button data-act="retryRoom">Erneut versuchen</button>`;
+  else body='<p class="small muted">Raum wird geöffnet …</p>';
+  return `<section class="panel"><span class="label">Mitspieler einladen</span>
+    <p class="small">${IN_APP?'Mitspieler mit der Timetracker-App treten mit dem Raumcode bei.':'Mitspieler scannen den Code oder öffnen den Link auf ihrem Handy und spielen dort mit.'} Dieses Handy ist der Host: Lass das Spiel hier geöffnet und den Bildschirm an.</p>
+    ${body}
+    <p class="small muted">Die Musik läuft bei jedem Mitspieler auf dem eigenen Gerät. Dort einmal oben auf „Ton einschalten“ tippen. Sitzt ihr zusammen, reicht der Ton eines Geräts.</p></section>`;
+}
+function saveWebBase(){
+  let v=(document.getElementById('webBase')?.value||'').trim();
+  if(!/^https?:\/\//i.test(v)) v='https://'+v;
+  let u;try{u=new URL(v)}catch{}
+  if(!u||!u.hostname.includes('.')){toast('Das sieht nicht nach einer Internetadresse aus, z. B. https://deinname.github.io/timetracker/');return}
+  let base=u.origin+u.pathname.replace(/index\.html$/,'');if(!base.endsWith('/'))base+='/';
+  LS.set('webBase',base);S.webDraft='';toast('Adresse gespeichert.');render();
+}
+// Einem Raum beitreten: Link oder Raumcode
+function joinOther(){
+  let raw=(document.getElementById('joinLink')?.value||'').trim(), code=null;
+  try{const u=new URL(raw);code=u.searchParams.get('join')||u.searchParams.get('c')}catch{}
+  if(!code&&/^[a-z0-9]{6}$/i.test(raw)) code='zeitstrahl-'+raw.toLowerCase();
+  if(!code&&/^zeitstrahl-[a-z0-9]{6}$/i.test(raw)) code=raw.toLowerCase();
+  if(!code){toast('Gib den Raumcode (6 Zeichen) oder den Einladungslink ein.');return}
+  if(code===NET.id){toast('Das ist dein eigener Raum. Schick den Link deinen Mitspielern.');return}
+  location.href=`${location.pathname}?join=${encodeURIComponent(code)}`;
+}
+
+/* ---------- Ansichten ---------- */
+let V=S; // Daten für die gemeinsamen Bausteine: beim Host S, auf dem Handy der empfangene Spielstand
+function header(){
+  return `<header><div class="brand">${LOGO}<span>Timetracker</span></div><div class="row" style="gap:4px">
+  ${S.screen==='game'&&NET.status==='ready'?`<button class="btn-ghost small" data-act="invite">${S.showInvite?'Einladung schließen':'Einladen'}</button>`:''}
+  ${S.screen==='game'?`<button class="btn-ghost small" data-act="quit">Spiel beenden</button>`:''}</div></header>`;
+}
+
+/* ---------- Gespeicherte Playlisten ---------- */
+// Der Host kann erstellte oder geladene Playlisten unter eigenem Namen speichern und später ohne neue Suche spielen
+const savedLists=()=>{const l=LS.get('saved',[]);return Array.isArray(l)?l:[]};
+function savePlaylist(){
+  const el=document.getElementById('saveName');
+  const name=(el?.value||'').trim().slice(0,40);
+  if(!name){toast('Gib der Playlist einen Namen.');el?.focus();return}
+  const tracks=S.tracks.map(({id,dzId,title,artist,year,img,genre})=>({id,dzId,title,artist,year,img,genre}));
+  const l=savedLists(), i=l.findIndex(x=>x.name.toLowerCase()===name.toLowerCase());
+  const entry={name,source:S.baseSource||S.source,genreFixed:!!S.genreFixed,at:Date.now(),tracks};
+  if(i>=0) l[i]=entry; else l.unshift(entry);
+  LS.set('saved',l);
+  if(JSON.stringify(LS.get('saved',[]))!==JSON.stringify(l)){toast('Speichern hat nicht geklappt, der Speicher ist voll. Lösche eine alte Playlist.');return}
+  S.savedName=name;S.source=`${name} · gespeicherte Playlist`;
+  toast(i>=0?`„${name}“ wurde überschrieben.`:`„${name}“ ist gespeichert.`);render();
+}
+function loadSaved(i){
+  const p=savedLists()[i]; if(!p||!p.tracks?.length) return;
+  S.tracks=shuffle(p.tracks.map(t=>({...t})));S.genreFixed=!!p.genreFixed;S.baseSource=p.source;
+  S.source=`${p.name} · gespeicherte Playlist`;S.savedName=p.name;S.mode='deezer';S.savedDel=null;
+  go('setup');
+}
+function deleteSaved(i){
+  if(S.savedDel!==i){S.savedDel=i;render();return}
+  const l=savedLists();const [p]=l.splice(i,1);LS.set('saved',l);S.savedDel=null;
+  if(p) toast(`„${p.name}“ wurde gelöscht.`);render();
+}
+function savedPanel(){
+  const l=savedLists(); if(!l.length) return '';
+  return `<section class="panel"><span class="label">Gespeicherte Playlisten</span>
+    <div class="stack" style="gap:8px">${l.map((p,i)=>`<div class="row" style="gap:8px;align-items:center">
+      <div style="flex:1;min-width:0"><b>${esc(p.name)}</b><div class="small muted">${p.tracks.length} Songs · ${esc(p.source||'')}</div></div>
+      <button data-saveload="${i}" ${S.gen.busy?'disabled':''}>Spielen</button>
+      <button class="btn-ghost small" data-savedel="${i}">${S.savedDel===i?'Wirklich löschen':'Löschen'}</button></div>`).join('')}</div></section>`;
+}
+function savePanel(){
+  const def=S.savedName||String(S.baseSource||S.source||'').split(' · ')[0];
+  return `<section class="panel"><span class="label">Playlist speichern</span>
+    <p class="small muted">Speichere diese Songs unter einem eigenen Namen. Du findest sie dann im Startmenü und kannst sie ohne neue Suche wieder spielen.</p>
+    <div class="copyrow"><input type="text" id="saveName" maxlength="40" value="${esc(def)}" placeholder="Name der Playlist" autocomplete="off"><button data-act="savePl">Speichern</button></div></section>`;
+}
+function vHome(){
+  return `${header()}
+  <section class="stack"><div class="hero">${LOGO}</div><h1>Welches Jahr hörst du?</h1>
+  <p class="muted">Ein Song läuft, ihr seht weder Titel noch Interpret. Wer dran ist, ordnet ihn in den gemeinsamen Zeitstrahl ein. Richtig gibt einen Punkt und die Karte bleibt liegen. Falsch gibt einen Jokerpunkt, mit dem ihr euch später helft oder andere ärgert. Die Musik kommt als 30-Sekunden-Ausschnitte von Deezer, ganz ohne Anmeldung.</p></section>
+  ${savedPanel()}
+  ${genPanel()}
+  <section class="panel"><span class="label">Oder eine Deezer-Playlist laden</span>
+    <p class="small">Füge den Link einer öffentlichen Deezer-Playlist ein, der Link sieht so aus: <code>https://www.deezer.com/de/playlist/</code> und dahinter eine Nummer. Die Jahre bestimmt das Spiel wie beim Erstellen.</p>
+    <div class="copyrow"><input type="text" id="dzLink" placeholder="https://www.deezer.com/playlist/…" autocomplete="off" spellcheck="false"><button data-act="dzLink" ${S.gen.busy?'disabled':''}>Laden</button></div>
+  </section>
+  <section class="panel"><span class="label">Bei jemandem mitspielen</span>
+    <p class="small">Gib den Raumcode ein, den dir der Host zeigt.</p>
+    <input type="text" id="joinLink" placeholder="Raumcode, z. B. k7m2xq" autocomplete="off" autocapitalize="off" spellcheck="false">
+    <button data-act="joinOther">Mitspielen</button></section>`;
+}
+
+function vSetup(){
+  const dev = '';
+  return `${header()}<section class="stack"><h2>Spiel einrichten</h2><p class="muted small">${esc(S.source)} · ${S.tracks.length} Songs · <a href="#" data-act="home">andere Songs</a></p></section>
+  ${savePanel()}
+  <section class="panel players"><span class="label">Spieler</span>
+    ${S.roster.map((r,i)=>`<div class="row">${r.guest
+      ?`<input type="text" id="guest${i}" value="${esc(r.name)}" readonly aria-label="Name Spieler ${i+1}"><span class="tag">eingeladen</span>`
+      :`<input type="text" id="name${i}" data-name-i="${i}" value="${esc(r.name)}" maxlength="20" aria-label="Name Spieler ${i+1}">`}
+      ${S.roster.length>1?`<button data-del="${i}" aria-label="Spieler entfernen">✕</button>`:''}</div>`).join('')}
+    ${S.roster.length<10?'<button data-act="addp">Spieler an diesem Handy hinzufügen</button>':''}
+  </section>
+  ${inviteHtml()}
+  <section class="panel"><span class="label">Spielregeln</span>
+    <div class="seg-pick"><button class="${S.goal!=='all'?'on':''}" data-goal="target">Punkte erreichen</button><button class="${S.goal==='all'?'on':''}" data-goal="all">Alle Songs spielen</button></div>
+    ${S.goal!=='all'?`<label class="field"><span class="label">Punkte zum Sieg</span><input type="number" id="target" min="1" max="50" value="${S.target}" inputmode="numeric"></label>`
+      :`<label class="field"><span class="label">Songs im Spiel</span><input type="number" id="roundSongs" min="2" max="500" value="${S.roundSongs}" inputmode="numeric"></label>
+        <p class="small muted">Jeder bekommt gleich viele Songs. Wer am Ende die meisten Punkte hat, gewinnt.</p>`}
+    <label class="check"><input type="checkbox" id="keepWrong" ${S.keepWrong?'checked':''}><span>Falsch eingeordnete Songs kommen trotzdem an die richtige Stelle im Zeitstrahl, nur ohne Punkt.</span></label>
+    <label class="check"><input type="checkbox" id="bonus" ${S.bonus?'checked':''}><span>Bonuspunkte: Wer Interpret oder Titel richtig eintippt, bekommt je einen Punkt extra.</span></label>
+    <label class="check"><input type="checkbox" id="noJokers" ${S.noJokers?'checked':''}><span>Ohne Joker (klassisch)</span></label>
+  </section>
+  ${S.noJokers?'':`<section class="panel"><span class="label">Jokerpunkte</span>
+    <p class="small">Jeder falsch eingeordnete Song füllt deine Jokerleiste um einen Punkt. Vor jedem Song könnt ihr Punkte ausgeben:</p>
+    <ul class="rules">${Object.entries(JOKERS).filter(([k,j])=>(!j.needs||S[j.needs])&&!(k==='genre'&&S.genreFixed)).map(([k,j])=>j).map(j=>`<li><b>${j.name}</b> (${j.cost}): ${j.desc}${j.kind==='sab'?' Trifft einen Mitspieler deiner Wahl.':''}</li>`).join('')}</ul>
+  </section>`}
+  ${dev}
+  <div class="bar"><div><button class="btn-primary" data-act="start">Spiel starten</button></div></div>`;
+}
+
+/* gemeinsame Bausteine für Host und Handy */
+function meter(q,i){
+  if(V.noJokers) return '';
+  const n=Math.min(q.jp,5), more=q.jp>5?`+${q.jp-5}`:'';
+  return `<div class="meter ${V.jpPop===i?'pop':''}" title="${q.jp} Jokerpunkte"><span>Joker ${q.jp}</span><span class="seg">${Array.from({length:5},(_,k)=>`<i class="${k<n?'f':''}"></i>`).join('')}</span>${more}</div>`;
+}
+function scoresHtml(active,me=-1){
+  return `<div class="scores">${V.players.map((q,i)=>`<div class="ps ${i===active?'on':''}"><div class="top"><span class="nm">${esc(q.name)}${i===me?' (du)':''}</span><span class="pts">${q.score}${V.goal==='all'?'':`<small>/${V.target}</small>`}</span></div>${meter(q,i)}</div>`).join('')}</div>`;
+}
+function stripHtml(newIdx){
+  const span=Math.max(1,V.maxY-V.minY), pos=y=>((y-V.minY)/span*96+2).toFixed(2);
+  const ticks=V.timeline.map((c,i)=>`<i class="${decade(c.year)} ${i===newIdx?'n':''}" style="left:${pos(c.year)}%"></i>`).join('');
+  const marks=[];for(let d=Math.ceil(V.minY/10)*10;d<=V.maxY;d+=10)marks.push(`<span style="left:calc(${pos(d)}% - 8px)">${String(d).slice(2)}</span>`);
+  return `<div class="strip" aria-hidden="true">${ticks}${marks.join('')}</div>`;
+}
+function slotLabel(tl,i){return i===0?`vor ${tl[0].year}`:i===tl.length?`nach ${tl[tl.length-1].year}`:`zwischen ${tl[i-1].year} und ${tl[i].year}`}
+// Zeitstrahl, wie er vor dem Einordnen aussah (bei behaltenen falschen Songs)
+const baseTl=(tl,r)=>r&&r.kept&&!r.ok?tl.filter((_,k)=>k!==r.index):tl;
+function cardHtml(c,cls=''){
+  const nm=c.by!=null&&V.players[c.by]&&V.players.length>1?esc(V.players[c.by].name):'';
+  const who=nm||c.wrong?`<span class="who">${[nm,c.wrong?'falsch':''].filter(Boolean).join(' · ')}</span>`:'';
+  if(c.wrong) cls+=' miss';
+  return `<div class="card ${cls}"><div class="year ${decade(c.year)}">${c.year}</div><div class="t"><b>${esc(c.title)}</b><span>${esc(c.artist)}</span></div>${who}</div>`;
+}
+function fxBadges(fx){
+  const b=[], nm=i=>esc(V.players[i]?.name||'');
+  if(fx.double) b.push('<span class="badge">Doppelte Punkte</span>');
+  if(fx.hideWrong) b.push('<span class="badge">Falsche ausgeblendet</span>');
+  if(typeof fx.decade==='string') b.push(`<span class="badge">Jahrzehnt: ${esc(fx.decade)}</span>`);
+  if(fx.genre) b.push(`<span class="badge">Genre: ${esc(fx.genre)}</span>`);
+  if(fx.turbo) b.push(`<span class="badge bad">Turbo von ${nm(fx.turbo.by)}</span>`);
+  if(fx.reverse) b.push(`<span class="badge bad">Rückwärts von ${nm(fx.reverse.by)}</span>`);
+  if(fx.snippet) b.push(`<span class="badge bad">10-Sekunden-Ausschnitt von ${nm(fx.snippet.by)}</span>`);
+  return b.length?`<div class="badges">${b.join('')}</div>`:'';
+}
+function stageHtml(o){
+  const {m,rev,fx,label,ctrl,playing}=o;
+  const discCls=[playing?'spin':'',fx.turbo&&!rev?'fast':'',fx.reverse&&!rev?'rev':'',rev&&m?.img?'img':''].join(' ');
+  return `<section class="stage"><div class="disc ${discCls}">${rev&&m?.img?`<img src="${esc(m.img)}" alt="">`:''}</div>
+    <div class="info"><span class="label">${label}</span>
+      ${rev&&m?`<div><b style="font-size:1.1rem">${esc(m.title)}</b><div class="muted">${esc(m.artist)}</div></div>`:'<p class="muted small">Hör genau hin: Aus welchem Jahr ist der Song?</p>'}
+      ${rev&&m?`<div class="year ${decade(m.year)}" style="align-self:flex-start">${m.year}</div>`:''}
+      ${fxBadges(fx)}${ctrl}
+    </div></section>`;
+}
+function resultHtml(r,m,tl,who){
+  if(!r||!m) return '';
+  const b=r.bonus;
+  const bl=b?[b.artist?'Interpret richtig, +1':(b.artistTry?'Interpret falsch':''),b.title?'Titel richtig, +1':(b.titleTry?'Titel falsch':'')].filter(Boolean):[];
+  const bonusP=bl.length?`<p class="small bonusline">${bl.join(' · ')}</p>`:'';
+  if(r.ok) return `<div class="result ok"><h3>Richtig, +${r.pts} ${r.pts===1?'Punkt':'Punkte'}</h3><p>${esc(m.title)} von ${esc(m.artist)} ist von ${m.year} und bleibt im Zeitstrahl.</p>${bonusP}</div>`;
+  return `<div class="result no"><h3>Leider falsch${r.noJp?'':', +1 Jokerpunkt'}</h3><p>${esc(m.title)} von ${esc(m.artist)} ist von ${m.year}. Der Platz war ${esc(slotLabel(tl,r.index))}, ${esc(who)} ${esc(slotLabel(tl,r.chosen))} gewählt.${r.keptMsg?' Der Song kommt trotzdem in den Zeitstrahl, aber ohne Punkt.':''}</p>${bonusP}</div>`;
+}
+function timelineHtml(o){
+  const {tl,rev,r,m,interactive,slot}=o, line=[];
+  if(!rev){
+    for(let i=0;i<=tl.length;i++){
+      if(interactive) line.push(`<button class="slot ${slot===i?'sel':''}" data-slot="${i}"><span>${slot===i?'Hier einordnen':esc(slotLabel(tl,i))}</span><span aria-hidden="true">${slot===i?'●':'+'}</span></button>`);
+      if(i<tl.length) line.push(cardHtml(tl[i]));
+    }
+  }else{
+    for(let i=0;i<=tl.length;i++){
+      if(!r.ok&&i===r.index&&m) line.push(cardHtml(m,'ghost'));
+      if(!r.ok&&i===r.chosen) line.push(`<div class="slot wrong"><span>Tipp: ${esc(slotLabel(tl,i))}</span><span>✕</span></div>`);
+      if(i<tl.length) line.push(cardHtml(tl[i],r.ok&&i===r.index?'new':''));
+    }
+  }
+  return `<section class="stack"><div class="row" style="justify-content:space-between"><span class="label">Gemeinsamer Zeitstrahl</span><span class="small muted">${tl.length} ${tl.length===1?'Karte':'Karten'} · noch ${o.deck} im Stapel</span></div>
+  ${stripHtml(rev&&r.ok?r.index:-1)}<div class="tl">${line.join('')}</div></section>`;
+}
+function shopPanels(players,bi,ti,gs){
+  const b=players[bi];
+  const jb=type=>{const J=JOKERS[type], have=J.kind==='help'&&b.fx[type];
+    return `<button class="joker ${have?'have':''}" data-buy="${type}" ${b.jp<J.cost||have?'disabled':''}><span class="t"><b>${J.name}${have?' · gekauft':''}</b><span>${J.desc}</span></span><span class="cost">${J.cost}</span></button>`};
+  let genre=jokerOn('genre')?jb('genre'):'';
+  if(gs==='loading') genre+='<p class="small muted">Suche Genres im Stapel …</p>';
+  else if(Array.isArray(gs)) genre+=gs.length
+    ?`<div class="seg-pick">${gs.map(([g,n])=>`<button data-genre="${esc(g)}">${esc(g)} <span class="muted">${n}</span></button>`).join('')}<button class="btn-ghost" data-genre-close="1">Abbrechen</button></div>`
+    :'<p class="small err">Für die nächsten Songs im Stapel ließ sich kein Genre bestimmen. Deezer war nicht erreichbar oder kennt die Songs nicht.</p>';
+  const others=players.map((q,i)=>i===bi?'':`<button class="${i===ti?'on':''}" data-target="${i}">${esc(q.name)}</button>`).join('');
+  const sab=players.length>1?`<section class="panel"><span class="label">Jemanden ärgern</span>
+    <div class="stack"><span class="small muted">Wen trifft es bei seinem nächsten Zug? Mehrere Sabotagen lassen sich kombinieren.</span><div class="seg-pick">${others}</div></div>
+    <div class="jokers">${jb('snippet')}${jb('turbo')}${jb('reverse')}</div></section>`:'';
+  return `<section class="panel"><span class="label">Hilfe für ${esc(b.name)} · ${b.jp} Jokerpunkte</span>
+    <p class="small muted">Du kannst mehrere Hilfen für denselben Zug kaufen.</p>
+    <div class="jokers">${genre}${jokerOn('hideWrong')?jb('hideWrong'):''}${jb('decade')}${jb('double')}</div></section>${sab}`;
+}
+function queueHtml(players,canUndo){
+  const q=[];
+  players.forEach((pl,i)=>Object.entries(pl.fx||{}).forEach(([type,v])=>{
+    if(!JOKERS[type]) return;
+    const from=JOKERS[type].kind==='sab'?` · von ${esc(players[v.by]?.name||'')}`:'';
+    q.push(`<div><span><b>${esc(pl.name)}</b>: ${JOKERS[type].name}${type==='genre'?' ('+esc(v)+')':''}${from}</span>${canUndo(i,type,v)?`<button class="btn-ghost small" data-undo="${i}:${type}">Zurücknehmen</button>`:''}</div>`);
+  }));
+  return q.length?`<section class="panel"><span class="label">Vorgemerkt</span><div class="queued">${q.join('')}</div></section>`:'';
+}
+function endHtml(players,me=-1){
+  const rank=players.map((q,i)=>({...q,i})).sort((a,b)=>b.score-a.score), top=rank[0];
+  const tie=rank.length>1&&rank[1].score===top.score;
+  return `<section class="stack"><span class="label">Spielende</span><h1>${tie?'Unentschieden':top.i===me?'Du gewinnst':esc(top.name)+(players.length>1?' gewinnt':'')}</h1>
+  <p class="muted">${players.length===1?`${top.score} ${top.score===1?'Punkt':'Punkte'} geholt.`:''}</p></section>
+  <div class="rank">${rank.map(q=>`<div><span>${esc(q.name)}${q.i===me?' (du)':''} ${V.noJokers?'':`<span class="small muted">· ${q.jp} Joker übrig</span>`}</span><b>${q.score}</b></div>`).join('')}</div>
+  <section class="stack"><span class="label">Euer Zeitstrahl · ${V.timeline.length} Karten</span>${stripHtml(-1)}<div class="tl">${V.timeline.map(c=>cardHtml(c)).join('')}</div></section>`;
+}
+
+/* Host-Ansichten im Spiel */
+function hostCtrl(rev){
+  const err=S.playErr&&!rev?`<p class="small err">${esc(S.playErr)}</p>`:'';
+  return err+(['el','rev'].includes(S.audioKind)?`<div class="ctrl"><button id="btnToggle" data-act="toggle">${S.playing?'Pause':'Abspielen'}</button><button data-act="replay">Von vorn</button></div>`
+    :S.audioKind==='loading'?`<p class="small muted">${S.misses?'Suche einen Song mit Ausschnitt …':'Lade Ausschnitt …'}</p>`
+    :S.noAudio&&!rev?'<p class="small err">Gerade lassen sich keine Ausschnitte laden. Prüfe die Internetverbindung und versuch es erneut.</p><div class="ctrl"><button data-act="skip">Erneut versuchen</button></div>':'');
+}
+function bonusInputs(prefix,vals){
+  return `<section class="panel bonus"><span class="label">Bonuspunkte · optional</span>
+    <div class="bonusgrid"><input type="text" id="${prefix}Artist" value="${esc(vals.artist||'')}" placeholder="Interpret" autocomplete="off" autocapitalize="words" spellcheck="false" maxlength="100" aria-label="Interpret">
+    <input type="text" id="${prefix}Title" value="${esc(vals.title||'')}" placeholder="Titel" autocomplete="off" spellcheck="false" maxlength="100" aria-label="Titel"></div>
+    <p class="small muted">Je ein Punkt extra, wenn es stimmt. Kleine Tippfehler sind erlaubt.</p></section>`;
+}
+function vGame(){
+  V=S;
+  if(S.phase==='shop') return vShop();
+  const p=S.players[S.cur], tl=curTl(), m=S.mystery, rev=S.phase==='reveal', r=S.result;
+  const stage=stageHtml({m,rev,fx:pubFx(S.turnFx,m),label:`${esc(p.name)} ist dran${p.guest?' · auf eigenem Gerät':''}`,ctrl:hostCtrl(rev),playing:S.playing});
+  const end=rev&&((S.goal!=='all'&&p.score>=S.target)||!S.deck.length);
+  const hint=S.slot!=null?esc(slotLabel(tl,S.slot)):'Tippe auf eine Lücke im Zeitstrahl.';
+  const bar=rev?`<button class="btn-primary" data-act="next">${end?'Ergebnis ansehen':'Weiter'}</button>`
+               :p.guest?`<span class="hint">${esc(p.name)} ordnet auf dem eigenen Gerät ein …</span>`
+               :`<span class="hint">${hint}</span><button class="btn-primary" style="flex:none" data-act="place" ${S.slot==null?'disabled':''}>Einordnen</button>`;
+  return `${header()}${S.showInvite?inviteHtml():''}${scoresHtml(S.cur)}${stage}${rev?resultHtml(r,m,baseTl(tl,r),p.name+' hatte'):''}
+  ${!rev&&S.bonus&&!p.guest?bonusInputs('bonus',S.bonusIn):''}
+  ${timelineHtml({tl:rev?baseTl(tl,r):tl,rev,r,m,interactive:!p.guest,slot:S.slot,deck:S.deck.length})}
+  <div class="bar"><div>${bar}</div></div>`;
+}
+function vShop(){
+  const sh=S.shop, nextP=S.players[S.cur];
+  // Eingeladene Spieler setzen ihre Joker nur auf ihrem eigenen Gerät
+  const local=S.players.map((q,i)=>({q,i})).filter(x=>!x.q.guest);
+  if(sh.buyer!=null&&S.players[sh.buyer]?.guest) sh.buyer=null;
+  if(sh.buyer==null){const c=local.find(x=>x.q.jp>0);sh.buyer=c?c.i:null}
+  if(sh.buyer!=null&&(sh.target==null||sh.target===sh.buyer)) sh.target=S.players.findIndex((_,i)=>i!==sh.buyer);
+  const buyers=local.map(({q,i})=>`<button class="${i===sh.buyer?'on':''}" data-buyer="${i}" ${q.jp===0?'disabled':''}>${esc(q.name)} · ${q.jp}</button>`).join('');
+  const guests=S.players.some(q=>q.guest);
+  return `${header()}${S.showInvite?inviteHtml():''}${scoresHtml(S.cur)}
+  <section class="stack"><span class="label">Vor dem nächsten Song</span><h2>Joker einsetzen</h2>
+  <p class="muted small">Als Nächstes ist ${esc(nextP.name)} dran. Hilfen gelten beim eigenen nächsten Zug.${guests?' Eingeladene Spieler setzen ihre Joker auf ihrem eigenen Gerät.':''}</p></section>
+  ${local.length?`<section class="panel"><span class="label">Wer setzt hier Joker ein?</span><div class="seg-pick">${buyers}</div></section>`:''}
+  ${sh.buyer!=null?shopPanels(S.players,sh.buyer,sh.target,sh.genre[sh.buyer]):'<section class="panel"><p class="small muted">An diesem Gerät hat gerade niemand Jokerpunkte.</p></section>'}
+  ${queueHtml(S.players,(pi,type,v)=>!S.players[JOKERS[type].kind==='sab'?v.by:pi]?.guest)}
+  <div class="bar"><div><button class="btn-primary" data-act="go">Song für ${esc(nextP.name)} starten</button></div></div>`;
+}
+function vEnd(){
+  V=S;
+  return `${header()}${endHtml(S.players)}
+  <div class="bar"><div><button data-act="home">Andere Songs</button><button class="btn-primary" data-act="again">Nochmal spielen</button></div></div>`;
+}
+function keepFocus(fn){
+  const a=document.activeElement, id=a&&a!==document.body?a.id:'';
+  let ss=null,se=null;try{ss=a.selectionStart;se=a.selectionEnd}catch{}
+  fn();
+  if(id){const el=document.getElementById(id);if(el&&el!==document.activeElement){el.focus({preventScroll:true});try{if(ss!=null)el.setSelectionRange(ss,se)}catch{}}}
+}
+function render(){
+  if(GUEST) return gRender();
+  V=S;
+  if(S.screen==='setup'&&NET.status==='off') startRoom();
+  const html=({home:vHome,setup:vSetup,game:vGame,end:vEnd})[S.screen]();
+  keepFocus(()=>{app.innerHTML=html});
+  drawQr();publish();
+}
+
+/* ---------- Ton auf dem Gerät der Mitspieler ----------
+   Der Host schickt mit dem Spielstand, was gerade läuft (Ausschnitt, Tempo, rückwärts, Startpunkt).
+   Jedes Gerät spielt den Ausschnitt selbst ab. */
+const GA={el:new Audio(),ctx:null,bufs:{},src:null,seq:-1,playing:false,on:false,kind:null};
+GA.el.preload='auto';
+function gaStop(){
+  GA.el.pause();
+  if(GA.src){try{GA.src.stop()}catch{}GA.src=null}
+  GA.playing=false;GA.kind=null;
+}
+async function gaRevBuf(url){
+  if(GA.bufs[url]) return GA.bufs[url];
+  const r=await fetch(url);const ab=await GA.ctx.decodeAudioData(await r.arrayBuffer());
+  for(let c=0;c<ab.numberOfChannels;c++) ab.getChannelData(c).reverse();
+  return GA.bufs[url]=ab;
+}
+async function gaStart(a){
+  gaStop();
+  const seq=a.seq;
+  if(a.rev){
+    try{
+      if(!GA.ctx) GA.ctx=new (window.AudioContext||window.webkitAudioContext)();
+      const buf=await gaRevBuf(a.url);
+      if(GA.seq!==seq) return;
+      const src=GA.ctx.createBufferSource();src.buffer=buf;src.playbackRate.value=a.rate||1;src.connect(GA.ctx.destination);
+      GA.ctx.resume();
+      if(a.snip) src.start(0,a.off||0,a.snip/1000*(a.rate||1)); else src.start(0,a.off||0);
+      GA.src=src;GA.kind='rev';GA.playing=true;
+      if(!a.playing){GA.ctx.suspend();GA.playing=false}
+      return;
+    }catch{/* rückwärts geht hier nicht: normal abspielen */}
+  }
+  const el=GA.el;el.src=a.url;
+  const r=a.rate||1;el.defaultPlaybackRate=r;el.playbackRate=r;
+  const keep=r===1;el.preservesPitch=keep;el.mozPreservesPitch=keep;el.webkitPreservesPitch=keep;
+  GA.kind='el';
+  if(!a.playing) return;
+  try{await el.play();if(GA.seq!==seq)return;el.playbackRate=r;if(a.off)el.currentTime=a.off;GA.playing=true}
+  catch{GA.on=false;gRender()}
+}
+function gaSync(st){
+  const a=st&&st.screen==='game'?st.audio:null;
+  if(!GA.on||!a||!a.url){if(GA.kind)gaStop();GA.seq=-1;return}
+  if(a.seq!==GA.seq){GA.seq=a.seq;gaStart(a);return}
+  if(a.playing&&!GA.playing){
+    if(GA.kind==='el'){GA.el.play().then(()=>GA.playing=true).catch(()=>{})}
+    if(GA.kind==='rev'&&GA.ctx){GA.ctx.resume();GA.playing=true}
+  }else if(!a.playing&&GA.playing){
+    if(GA.kind==='el') GA.el.pause();
+    if(GA.kind==='rev'&&GA.ctx) GA.ctx.suspend();
+    GA.playing=false;
+  }
+}
+function gaToggle(){
+  GA.on=!GA.on;
+  if(GA.on){
+    // muss direkt im Tippen passieren, damit das Gerät Ton erlaubt
+    try{GA.el.src=SILENT;GA.el.play().catch(()=>{})}catch{}
+    try{if(!GA.ctx)GA.ctx=new (window.AudioContext||window.webkitAudioContext)();GA.ctx.resume()}catch{}
+    GA.seq=-1;setTimeout(()=>gaSync(G.st),150);
+  }else gaStop();
+  gRender();
+}
+/* ---------- Handy der Mitspieler ---------- */
+const G={host:JOIN_ID,me:null,joined:false,st:null,slot:null,target:null,bonusIn:{artist:'',title:''},name:LS.get('guestName',''),offline:true,missing:0,busy:false,conn:null,peer:null,refused:null};
+if(GUEST){
+  let me=LS.get('gid',null);
+  if(!me){const h=b=>[...b].map(x=>x.toString(16).padStart(2,'0')).join('');me={id:h(randBytes(6)),secret:h(randBytes(12))};LS.set('gid',me)}
+  G.me=me;G.joined=LS.get('joined_'+JOIN_ID,false);
+}
+async function gConnect(){
+  const P=await loadPeerLib();
+  if(!P){G.refused='Die Verbindungsbibliothek ließ sich nicht laden. Prüfe die Internetverbindung und lade die Seite neu.';gRender();return}
+  const peer=new P(undefined,{debug:0});G.peer=peer;
+  peer.on('open',()=>gOpenConn());
+  peer.on('disconnected',()=>{try{peer.reconnect()}catch{}});
+  peer.on('error',e=>{
+    if(e.type==='peer-unavailable'){G.missing++;G.offline=true;gRender();setTimeout(gOpenConn,4000);return}
+    if(e.type==='browser-incompatible'){G.refused='Dieser Browser unterstützt keine direkten Verbindungen. Versuch es mit Chrome oder Safari.';gRender();return}
+  });
+}
+function gOpenConn(){
+  if(!G.peer||G.peer.destroyed) return;
+  if(G.conn&&G.conn.open) return;
+  const conn=G.peer.connect(G.host,{reliable:true,serialization:'json'});G.conn=conn;
+  conn.on('open',()=>{
+    G.offline=false;G.missing=0;
+    conn.send(G.joined?{type:'join',id:G.me.id,secret:G.me.secret,name:G.name}:{type:'hello',id:G.me.id,secret:G.me.secret});
+    gRender();
+  });
+  conn.on('data',d=>{
+    if(!d||typeof d!=='object') return;
+    if(d.kind==='state'){const prev=G.st;G.st=d.state;onGState(prev)}
+    else if(d.kind==='joined'){G.joined=true;G.busy=false;LS.set('joined_'+G.host,true);gRender()}
+    else if(d.kind==='error'){toast(d.msg);G.busy=false;gRender()}
+  });
+  const lost=()=>{if(G.conn!==conn)return;G.conn=null;G.offline=true;gRender();setTimeout(gOpenConn,3000)};
+  conn.on('close',lost);conn.on('error',lost);
+}
+function gJoin(){
+  const el=document.getElementById('gname');
+  const name=(el?el.value:G.name).trim();
+  if(!name){toast('Bitte gib deinen Namen ein.');return}
+  G.name=name;LS.set('guestName',name);
+  if(!G.conn||!G.conn.open){toast('Noch keine Verbindung zum Host. Einen Moment …');return}
+  G.busy=true;gRender();
+  G.conn.send({type:'join',id:G.me.id,secret:G.me.secret,name});
+}
+function gSend(action){
+  if(!G.conn||!G.conn.open){toast('Keine Verbindung zum Host.');return}
+  G.conn.send(action);
+}
+function onGState(prev){
+  const s=G.st;
+  gaSync(s);
+  if(s&&(!prev||prev.cur!==s.cur||prev.phase!==s.phase||prev.screen!==s.screen||(prev.timeline||[]).length!==(s.timeline||[]).length)) G.slot=null;
+  if(s&&prev&&(prev.cur!==s.cur||prev.phase!==s.phase)) G.bonusIn={artist:'',title:''};
+  gRender();
+  if(s&&prev&&(prev.phase!==s.phase||prev.screen!==s.screen)) window.scrollTo(0,0);
+}
+const myIdx=()=>G.st?.players?G.st.players.findIndex(p=>p.guest===G.me?.id):-1;
+function gTarget(s,me){
+  if(G.target!=null&&G.target!==me&&s.players[G.target]) return G.target;
+  return s.players.findIndex((_,i)=>i!==me);
+}
+function gJoinForm(s){
+  const lobby=s?.lobby?.length?`<p class="small muted">Schon dabei: ${s.lobby.map(r=>esc(r.name)).join(', ')}</p>`:'';
+  return `<section class="stack"><h1>Mitspielen</h1>
+    <p class="muted">Gib deinen Namen ein. Das Spiel läuft auf dem Handy des Hosts, die Musik spielt auch auf deinem Gerät.</p></section>
+    <section class="panel"><label class="label" for="gname">Dein Name</label>
+    <input type="text" id="gname" maxlength="20" value="${esc(G.name)}" autocomplete="nickname" enterkeyhint="go">
+    <button class="btn-primary" data-g="join" ${G.busy?'disabled':''}>${G.busy?'Trete bei …':'Beitreten'}</button>${lobby}</section>`;
+}
+function gLobby(s){
+  const inLobby=(s.lobby||[]).some(r=>r.guest===G.me.id);
+  if(!inLobby) return `<section class="stack"><h2>Nicht in der Spielerliste</h2><p class="muted">Der Host hat dich aus der Liste genommen.</p><button class="btn-primary" data-g="join">Wieder beitreten</button></section>`;
+  return `<section class="stack"><span class="label">Du bist dabei</span><h1>Gleich geht’s los</h1>
+    <p class="muted">Der Host startet das Spiel${s.source?` mit „${esc(s.source)}“`:''}. Ziel: ${s.target} Punkte.</p></section>
+    <section class="panel"><span class="label">Spieler</span><div class="list">${(s.lobby||[]).map(r=>`<div>${esc(r.name)}${r.guest===G.me.id?' <span class="tag">du</span>':r.guest?' <span class="tag">eingeladen</span>':''}</div>`).join('')}</div></section>
+    <p class="small muted">Tipp oben auf „Ton einschalten“, damit die Musik auch hier läuft. Lass diese Seite offen.</p>`;
+}
+function gGame(s,me){
+  if(s.phase==='shop') return gShop(s,me);
+  const p=s.players[s.cur], my=s.cur===me, rev=s.phase==='reveal', r=s.result, m=s.mystery, au=s.audio||{};
+  const ctrl=!my?''
+    :['el','rev'].includes(au.kind)?`<div class="ctrl"><button data-g="toggle">${au.playing?'Pause':'Abspielen'}</button><button data-g="replay">Von vorn</button></div>`
+    :au.kind==='loading'?'<p class="small muted">Song wird geladen …</p>'
+    :au.noAudio&&!rev?'<p class="small err">Der Song lässt sich gerade nicht abspielen.</p><div class="ctrl"><button data-g="skip">Anderen Song nehmen</button></div>':'';
+  const stage=stageHtml({m,rev,fx:s.turnFx||{},label:my?'Du bist dran':`${esc(p.name)} ist dran`,ctrl,playing:au.playing});
+  const bar=my&&!rev?`<span class="hint">${G.slot==null?'Tippe auf eine Lücke im Zeitstrahl.':esc(slotLabel(s.timeline,G.slot))}</span><button class="btn-primary" style="flex:none" data-g="place" ${G.slot==null?'disabled':''}>Einordnen</button>`
+    :my&&rev?'<button class="btn-primary" data-g="next">Weiter</button>'
+    :`<span class="hint">${rev?`Warte, bis ${esc(p.name)} weitermacht …`:`${esc(p.name)} ordnet gerade ein.`}</span>`;
+  return `${scoresHtml(s.cur,me)}${stage}${rev?resultHtml(r,m,baseTl(s.timeline,r),my?'du hattest':p.name+' hatte'):''}
+    ${my&&!rev&&s.bonus?bonusInputs('g',G.bonusIn):''}
+    ${timelineHtml({tl:rev?baseTl(s.timeline,r):s.timeline,rev,r,m,interactive:my&&!rev,slot:G.slot,deck:s.deck})}
+    <div class="bar"><div>${bar}</div></div>`;
+}
+function gShop(s,me){
+  const nextP=s.players[s.cur], ti=gTarget(s,me);
+  const bar=s.cur===me?'<button class="btn-primary" data-g="go">Meinen Song starten</button>'
+    :`<span class="hint">Als Nächstes ist ${esc(nextP.name)} dran und startet den Song.</span>`;
+  return `${scoresHtml(s.cur,me)}
+    <section class="stack"><span class="label">Vor dem nächsten Song</span><h2>Joker einsetzen</h2>
+    <p class="muted small">${s.cur===me?'Du bist als Nächstes dran.':`Als Nächstes ist ${esc(nextP.name)} dran.`} Hilfen gelten bei deinem nächsten Zug.</p></section>
+    ${shopPanels(s.players,me,ti,s.genre?.[me])}
+    ${queueHtml(s.players,(pi,type,v)=>JOKERS[type].kind==='sab'?v.by===me:pi===me)}
+    <div class="bar"><div>${bar}</div></div>`;
+}
+function gRender(){
+  const s=G.st;
+  if(s?.players) V={players:s.players,target:s.target,timeline:s.timeline||[],minY:s.minY,maxY:s.maxY,jpPop:s.jpPop,genreFixed:s.genreFixed,goal:s.goal,noJokers:s.noJokers,keepWrong:s.keepWrong,bonus:s.bonus};
+  let h=`<header><div class="brand">${LOGO}<span>Timetracker</span></div><div class="row" style="gap:8px">${G.offline&&G.st?'<span class="small err">Verbindung unterbrochen …</span>':''}<button class="btn-ghost small sound ${GA.on?'on':''}" data-g="sound">${GA.on?'Ton an':'Ton einschalten'}</button><a class="small" href="${esc(location.pathname)}">Startmenü</a></div></header>`;
+  if(G.refused) h+=`<section class="stack"><h2>Keine Verbindung</h2><p class="muted">${esc(G.refused)}</p></section>`;
+  else if(!s&&G.missing) h+=`<section class="stack"><h2>Raum nicht gefunden</h2><p class="muted">Der Host hat den Raum noch nicht geöffnet oder das Spiel geschlossen. Ich versuche es weiter …</p><p class="small muted">Raumcode: ${esc(G.host.replace('zeitstrahl-',''))}</p></section>`;
+  else if(!s) h+='<p class="muted">Verbinde mit dem Host …</p>';
+  else if(!G.joined) h+=gJoinForm(s);
+  else if(s.screen==='game'||s.screen==='end'){
+    const me=myIdx();
+    if(me<0) h+=`<section class="stack"><h2>Das Spiel läuft schon</h2><p class="muted">Du bist noch nicht in der Spielerliste.</p><button class="btn-primary" data-g="join">Mitspielen</button></section>`;
+    else h+=s.screen==='end'?endHtml(s.players,me):gGame(s,me);
+  }
+  else h+=gLobby(s);
+  keepFocus(()=>{app.innerHTML=h});
+}
+function gClick(e){
+  const b=e.target.closest('button');if(!b)return;
+  const d=b.dataset, s=G.st;
+  if(d.slot!=null){G.slot=+d.slot;gRender();return}
+  if(d.target!=null){G.target=+d.target;gRender();return}
+  if(d.buy){const me=myIdx();if(d.buy==='genre')gSend({type:'genreOpen'});else gSend({type:'buy',joker:d.buy,target:gTarget(s,me)});return}
+  if(d.genre){gSend({type:'genre',genre:d.genre});return}
+  if(d.genreClose){gSend({type:'genreClose'});return}
+  if(d.undo){const [i,t]=d.undo.split(':');gSend({type:'undo',pi:+i,joker:t});return}
+  switch(d.g){
+    case 'join': gJoin();break;
+    case 'sound': gaToggle();break;
+    case 'place': if(G.slot!=null){gSend({type:'place',slot:G.slot,tlLen:s.timeline.length,artist:G.bonusIn.artist,title:G.bonusIn.title});G.bonusIn={artist:'',title:''}}break;
+    case 'next': case 'go': case 'toggle': case 'replay': case 'skip': gSend({type:d.g});break;
+  }
+}
+
+/* ---------- Ereignisse (Host) ---------- */
+app.addEventListener('input',e=>{
+  if(GUEST){
+    if(e.target.id==='gArtist') G.bonusIn.artist=e.target.value;
+    if(e.target.id==='gTitle') G.bonusIn.title=e.target.value;
+    return;
+  }
+  const t=e.target;
+  if(t.dataset.nameI!=null) S.roster[+t.dataset.nameI].name=t.value;
+  if(t.id==='genFrom') S.gen.from=Math.max(1900,Math.min(2030,parseInt(t.value,10)||1950));
+  if(t.id==='genTo') S.gen.to=Math.max(1900,Math.min(2030,parseInt(t.value,10)||2026));
+  if(t.id==='genCount') S.gen.count=Math.max(10,Math.min(300,parseInt(t.value,10)||100));
+  if(t.id==='genPer') S.gen.perArtist=Math.max(1,Math.min(10,parseInt(t.value,10)||3));
+  if(t.id==='genMu') S.gen.mu=parseInt(t.value,10);
+  if(t.id==='webBase') S.webDraft=t.value;
+  if(t.id==='genSigma') S.gen.sigma=parseInt(t.value,10);
+  if(['genFrom','genTo','genCount','genMu','genSigma'].includes(t.id)) updDist();
+  if(t.id==='roundSongs') S.roundSongs=Math.max(2,Math.min(500,parseInt(t.value,10)||30));
+  if(t.id==='bonusArtist') S.bonusIn.artist=t.value;
+  if(t.id==='bonusTitle') S.bonusIn.title=t.value;
+  if(t.id==='target') S.target=Math.max(1,Math.min(50,parseInt(t.value,10)||10));
+});
+app.addEventListener('change',e=>{
+  if(GUEST) return;
+  if(e.target.id==='genGenre') S.gen.genre=e.target.value;
+  if(e.target.id==='genLevel') S.gen.level=e.target.value;
+  if(e.target.id==='genMb') S.gen.mb=e.target.checked;
+  if(e.target.id==='genDist'){S.gen.dist=e.target.value;S.gen.distOpen=true;render()}
+  if(['genMu','genSigma','genDist'].includes(e.target.id)) LS.set('gen',{...LS.get('gen',{}),dist:S.gen.dist,mu:S.gen.mu,sigma:S.gen.sigma});
+  for(const k of ['keepWrong','bonus','noJokers']) if(e.target.id===k){S[k]=e.target.checked;LS.set(k,S[k]);render()}
+});
+app.addEventListener('click',e=>{
+  if(GUEST) return gClick(e);
+  const b=e.target.closest('button,a[data-act]'); if(!b) return;
+  const d=b.dataset;
+  if(d.copy){const v=d.copy;navigator.clipboard?.writeText(v).then(()=>toast('Kopiert.'),()=>toast('Kopieren nicht möglich, bitte markieren.'));return}
+  if(d.goal){S.goal=d.goal;LS.set('goal',S.goal);render();return}
+  if(d.saveload!=null){if(!S.gen.busy)loadSaved(+d.saveload);return}
+  if(d.savedel!=null){deleteSaved(+d.savedel);return}
+  if(d.invmode){S.inviteMode=d.invmode;render();return}
+  if(d.slot!=null){if(S.players[S.cur]?.guest)return;S.slot=+d.slot;render();return}
+  if(d.del!=null){S.roster.splice(+d.del,1);render();return}
+  if(d.buyer!=null){if(S.players[+d.buyer]?.guest)return;S.shop.buyer=+d.buyer;if(S.shop.target===S.shop.buyer)S.shop.target=S.players.findIndex((_,i)=>i!==S.shop.buyer);render();return}
+  if(d.target!=null){S.shop.target=+d.target;render();return}
+  if(d.buy){if(S.shop.buyer==null||S.players[S.shop.buyer]?.guest)return;d.buy==='genre'?openGenresFor(S.shop.buyer):(buyFor(S.shop.buyer,d.buy,S.shop.target),render());return}
+  if(d.genre){if(S.shop.buyer==null||S.players[S.shop.buyer]?.guest)return;pickGenreFor(S.shop.buyer,d.genre);render();return}
+  if(d.genreClose){delete S.shop.genre[S.shop.buyer];render();return}
+  if(d.undo){const [i,t]=d.undo.split(':');const v=S.players[+i]?.fx[t];if(!v||!JOKERS[t])return;
+    if(S.players[JOKERS[t].kind==='sab'?v.by:+i]?.guest)return;undoFx(+i,t,null);render();return}
+  const a=d.act; if(!a) return;
+  if(b.tagName==='A') e.preventDefault();
+  switch(a){
+    case 'home': go('home');break;
+    case 'gen': generatePlaylist();break;
+    case 'genCancel': S.gen.cancel=true;genProgress('Breche ab …');break;
+    case 'dzLink': loadDeezerPlaylist();break;
+    case 'savePl': savePlaylist();break;
+    case 'webBaseSave': saveWebBase();break;
+    case 'webBaseEdit': S.webDraft=LS.get('webBase','');LS.del('webBase');render();break;
+    case 'addp': S.roster.push({name:'Spieler '+(S.roster.length+1)});render();break;
+    case 'start': unlockAudio();startGame();break;
+    case 'place': if(!S.players[S.cur]?.guest) place();break;
+    case 'next': unlockAudio();next();break;
+    case 'go': unlockAudio();nextTurn();break;
+    case 'toggle': togglePlay();break;
+    case 'replay': replay();break;
+    case 'again': go('setup');break;
+    case 'quit': finish();break;
+    case 'skip': unlockAudio();skipSong();break;
+    case 'invite': S.showInvite=!S.showInvite;render();break;
+    case 'joinOther': joinOther();break;
+    case 'retryRoom': retryRoom();break;
+  }
+});
+app.addEventListener('keydown',e=>{if(GUEST&&e.key==='Enter'&&e.target.id==='gname')gJoin()});
+
+/* ---------- Start ---------- */
+(async()=>{
+  if(GUEST){document.title='Timetracker – Mitspielen';gRender();gConnect();return}
+  S.screen='home';render();
+})();
+</script>
+</body>
+</html>
